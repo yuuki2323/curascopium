@@ -29,7 +29,7 @@ const PcHeader = () => {
         <div className="flex items-center justify-end gap-4">
           {sns.map((sns) => {
             return (
-              <Link href={sns.href}>
+              <Link href={sns.href} key={sns.href}>
                 <Image src={sns.src} width={32} height={32} />
               </Link>
             );
