@@ -22,7 +22,7 @@ const PcHeader = () => {
     justify-between container mx-auto absolute top-0 right-0 left-0 z-10">
       <h1>
         <Link href="/">
-          <Image src="/icon.png" width={84} height={84} />
+          <Image src="/icon.png" alt="photo" width={84} height={84} />
         </Link>
       </h1>
       <div className="ml-auto">
