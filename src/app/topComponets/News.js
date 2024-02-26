@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import Title from '../ui/title'
+import Title from '../ui/Title.js'
+
 
 const News = () => {
   return (
