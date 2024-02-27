@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import Title from '../ui/Title'
 
 const Business = () => {
   return (
     <section className='container p-4 mx-auto'>
     <div className='mb-8'>
-    <h2 className='text-4xl text-title text-center'>BUSINESS</h2>
-    <p className='text-white text-center'>事業内容</p>
+    <Title en="BUSINESS" ja="事業内容" center="text-center"/>
     </div>
     <div className='flex justify-between gap-12 text-white'>
       <div>

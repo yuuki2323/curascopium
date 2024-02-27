@@ -1,11 +1,12 @@
 import React from "react";
+import Title from "../ui/Title";
 
 const Contact = () => {
   return (
     <section className="container p-4 mx-auto text-white">
       <div className="mb-8">
-        <h2 className="text-4xl text-title text-center">Contact</h2>
-        <p className="text-white text-center">お問い合わせ</p>
+      <Title en="CONTACT" ja="お問い合わせ" center="text-center"/>
+
       </div>
 
       <form

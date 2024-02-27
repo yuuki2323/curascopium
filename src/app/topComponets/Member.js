@@ -1,11 +1,12 @@
 import React from 'react'
+import Title from '../ui/Title'
 
 const Member = () => {
   return (
     <section className='container p-4 mx-auto'>
     <div className='mb-8'>
-    <h2 className='text-4xl text-title text-center'>MEMBER</h2>
-    <p className='text-white text-center'>メンバー紹介</p>
+    <Title en="MEMBER" ja="メンバー紹介" center="text-center"/>
+
     </div>
 
   </section>

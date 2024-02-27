@@ -5,7 +5,7 @@ import React from "react";
 const PcHeader = () => {
   const sns = [
     { href: "/", src: "/x.png" },
-    { href: "/", src: "/instagram.png" },
+    { href: "/", src: "/Instagram.png" },
     { href: "/", src: "/in.png" },
   ];
 
