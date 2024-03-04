@@ -30,7 +30,7 @@ const PcHeader = () => {
           {sns.map((sns) => {
             return (
               <Link href={sns.href} key={sns.href}>
-                <Image src={sns.src} width={36} height={36} />
+                <Image src={sns.src} width={36} height={36} alt="sns" />
               </Link>
             );
           })}

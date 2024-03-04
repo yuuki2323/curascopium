@@ -12,8 +12,8 @@ const News = async () => {
       <Title en="NEWS" ja="お知らせ" />
 
       {contents.map((post) => (
-        <dl className="text-white border-b border-white flex gap-8 py-2 mb-2">
-          <dt key={post.id}>
+        <dl className="text-white border-b border-white flex gap-8 py-2 mb-2" key={post.id}>
+          <dt >
             {format(new Date(post.createdAt), "yyyy年MM月dd日")}
           </dt>
           <dd>{post.title}</dd>
