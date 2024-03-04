@@ -6,7 +6,7 @@ const PcHeader = () => {
   const sns = [
     { href: "/", src: "/x.png" },
     { href: "/", src: "/Instagram.png" },
-    { href: "/", src: "/in.png" },
+    { href: "/", src: "/inw.png" },
   ];
 
   const navi = [
@@ -22,7 +22,7 @@ const PcHeader = () => {
     justify-between container mx-auto absolute top-0 right-0 left-0 z-10">
       <h1>
         <Link href="/">
-          <Image src="/icon.png" alt="photo" width={84} height={84} />
+          <Image src="/icon.png" alt="photo" width={88} height={88} />
         </Link>
       </h1>
       <div className="ml-auto">
@@ -30,18 +30,18 @@ const PcHeader = () => {
           {sns.map((sns) => {
             return (
               <Link href={sns.href} key={sns.href}>
-                <Image src={sns.src} width={32} height={32} />
+                <Image src={sns.src} width={36} height={36} />
               </Link>
             );
           })}
         </div>
         <nav className="hidden md:block">
-          <ul className=" md:flex md:justify-between md:items-center md:gap-4 md:mt-4">
+          <ul className=" md:flex md:justify-between md:items-center md:gap-6 md:mt-4">
             {navi.map((navi) => {
               return (
                 <li key={navi.nav}>
                   <Link href={navi.href}>
-                    <p className="text-white">{navi.nav}</p>
+                    <p className="text-white text-xl">{navi.nav}</p>
                   </Link>
                 </li>
               );

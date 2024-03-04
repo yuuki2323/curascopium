@@ -13,7 +13,7 @@ export default function Home() {
     <main className="bg-bg-black ">
       <Header />
       <Topphoto/>
-      <div className="bg-bg bg-contain">
+      <div className="bg-bg bg-contain bg-opacity-10">
         <News/>
         <History/>
         <Purpose/>
