@@ -1,0 +1,104 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa6";
+import { FaXmark } from "react-icons/fa6";
+import { IconContext } from "react-icons";
+
+const SumahoHeader = () => {
+  const sns = [
+    { href: "/", src: "/x.png" },
+    { href: "/", src: "/Instagram.png" },
+    { href: "/", src: "/inw.png" },
+  ];
+
+  const navi = [
+    { href: "/", nav: "お知らせ" },
+    { href: "/", nav: "チームの歴史" },
+    { href: "/", nav: "活動目的" },
+    { href: "/", nav: "メンバー紹介" },
+    { href: "/", nav: "事業内容" },
+    { href: "/", nav: "お問い合わせ" },
+  ];
+
+  const [isOpen, setOpen] = useState(true);
+  const handleMenu = () => {
+    setOpen(!isOpen);
+  };
+  return (
+    <header className="md:hidden z-30">
+      <h1>
+        <Link href="/">
+          <Image
+            src="/icon.png"
+            alt="photo"
+            width={48}
+            height={48}
+            className="absolute top-4 left-8"
+          />
+        </Link>
+      </h1>
+
+      <button onClick={handleMenu} className={`absolute top-4 right-8 `}>
+        <IconContext.Provider value={{ color: "white", size: "44px" }}>
+          <FaBars />
+        </IconContext.Provider>
+      </button>
+      <div
+        className={
+          isOpen
+            ? "fixed top-0 left-0 opacity-0 transition-all duration-200 ease-linear invisible w-screen h-screen"
+            : " fixed top-0 left-0 opacity-100 transition-all duration-200 ease-linear bg-bg-black bg-bg bg-contain w-screen h-screen visible z-50"
+        }
+      >
+        <h1>
+          <Link href="/">
+            <Image
+              src="/icon.png"
+              alt="photo"
+              width={48}
+              height={48}
+              className="absolute top-4 left-8"
+            />
+          </Link>
+        </h1>
+        <button className={`fixed top-4 right-8 `} onClick={handleMenu}>
+          <IconContext.Provider value={{ color: "white", size: "44px" }}>
+          <FaXmark />
+          </IconContext.Provider>
+        </button>
+        <div>
+        <nav className=" mt-24 flex flex-col items-center justify-center">
+          <ul className="mb-8">
+          {navi.map((navi)=>{
+            return(
+              <li key={navi.nav} className="mb-4 text-center">
+                  <Link href={navi.href} className="block p-2">
+                    <p className="text-white text-base">{navi.nav}</p>
+                  </Link>
+                </li>
+            );
+          })}
+          </ul>
+          <ul className="flex items-center gap-8">
+          {sns.map((sns) => {
+            return (
+              <li>
+              <Link href={sns.href} key={sns.href}>
+                <Image src={sns.src} width={36} height={36} alt="sns" />
+              </Link>
+              </li>
+            );
+          })}
+          </ul>
+          
+        </nav>
+        </div>
+
+      </div>
+    </header>
+  );
+};
+
+export default SumahoHeader;

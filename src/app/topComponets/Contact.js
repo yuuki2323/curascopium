@@ -3,7 +3,7 @@ import Title from "../ui/Title";
 
 const Contact = () => {
   return (
-    <section className="container p-4 mx-auto text-white text-lg">
+    <section className="container p-4 mx-auto text-white text-sm md:text-lg">
       <div className="mb-8">
       <Title en="CONTACT" ja="お問い合わせ" center="text-center"/>
 
@@ -15,10 +15,10 @@ const Contact = () => {
         name="form1"
         ENCTYPE="multipart/form-data"
         accept-charset="UTF-8"
-        className="bg-contact mx-auto w-3/4 bg-bg bg-contain py-12"
+        className="bg-contact mx-auto md:w-3/4 bg-bg bg-contain py-12"
       >
         <input type="hidden" name="key" value="d7efceec813650" />
-        <div className=" w-8/12 mx-auto">
+        <div className="w-10/12 md:w-8/12 mx-auto">
           <div className="mb-4">
             <p>氏名</p>
             <p>
@@ -72,7 +72,7 @@ const Contact = () => {
               name="submit"
               type="submit"
               value="確認画面へ"
-              className="bg-title text-black py-2 px-12 rounded-sm cursor-pointer"
+              className="bg-title text-black py-2 px-12 rounded-sm cursor-pointer shadow-lg"
             />
           </p>
           <p className=" text-right">
@@ -80,6 +80,7 @@ const Contact = () => {
               href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/d7efceec813650&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer"
               target="_blank"
               id="powered"
+              className="text-xs"
             >
               Powered by FormMailer.
             </a>

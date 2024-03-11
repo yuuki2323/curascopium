@@ -18,8 +18,8 @@ const PcHeader = () => {
     { href: "/", nav: "お問い合わせ" },
   ];
   return (
-    <header className="hidden md:flex md:p-4 
-    justify-between container mx-auto absolute top-0 right-0 left-0 z-10">
+    <header className="hidden md:flex md:p-4 lg:py-6 
+    justify-between container mx-auto absolute top-0 right-0 left-0 z-10 ">
       <h1>
         <Link href="/">
           <Image src="/icon.png" alt="photo" width={88} height={88} />
@@ -41,7 +41,7 @@ const PcHeader = () => {
               return (
                 <li key={navi.nav}>
                   <Link href={navi.href}>
-                    <p className="text-white text-xl">{navi.nav}</p>
+                    <p className="text-white  text-sm lg:text-lg">{navi.nav}</p>
                   </Link>
                 </li>
               );

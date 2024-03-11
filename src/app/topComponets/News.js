@@ -8,16 +8,15 @@ const News = async () => {
   const { contents } = await getList();
 
   return (
-    <section className="container p-4 mx-auto">
+    <section className="container p-4 mx-auto text-xs md:text-xl">
       <Title en="NEWS" ja="お知らせ" />
 
       {contents.map((post) => (
-        <dl className="text-white border-b border-white flex gap-8 py-2 mb-2" key={post.id}>
+        <dl className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2" key={post.id}>
           <dt >
-            {format(new Date(post.createdAt), "yyyy年MM月dd日")}
+            {format(new Date(post.createdAt), "yyyy/MM/dd")}
           </dt>
           <dd>{post.title}</dd>
-          {post.content}
         </dl>
 
       ))}

@@ -11,47 +11,92 @@ const Member = () => {
         <Title en="MEMBER" ja="メンバー紹介" center="text-center" />
       </div>
 
-      <Splide
-        options={{
-          autoplay: true,
-          interval: 4000,
-          type: "loop",
-          speed: 1200,
-          perPage: 3,
-          perMove: 1,
-          gap:24,
-          pagination: false,
-        }}
-        aria-label="profile-photo"
-      >
-        <SplideSlide>
-          <Image
-            src="/tanaka.png"
-            alt="topimage"
-            width={370}
-            height={480}
-            className=" w-screen h-auto hidden md:block"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <Image
-            src="/nagasawa.png"
-            alt="topimage"
-            width={370}
-            height={480}
-            className=" w-screen h-auto hidden md:block"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <Image
-            src="/yamamoto.png"
-            alt="topimage"
-            width={370}
-            height={480}
-            className=" w-screen h-auto hidden md:block"
-          />
-        </SplideSlide>
-      </Splide>
+      <div className="hidden md:block">
+        <Splide
+          options={{
+            autoplay: true,
+            interval: 4000,
+            type: "loop",
+            speed: 1200,
+            perPage: 3,
+            perMove: 1,
+            gap: 24,
+            pagination: false,
+          }}
+          aria-label="profile-photo"
+        >
+          <SplideSlide>
+            <Image
+              src="/tanaka.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto hidden md:block"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              src="/nagasawa.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto hidden md:block"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              src="/yamamoto.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto hidden md:block"
+            />
+          </SplideSlide>
+        </Splide>
+      </div>
+      <div className="md:hidden block">
+        <Splide
+          options={{
+            autoplay: true,
+            interval: 4000,
+            type: "loop",
+            speed: 1200,
+            perPage: 2,
+            perMove: 1,
+            gap: 24,
+            pagination: false,
+          }}
+          aria-label="profile-photo"
+        >
+          <SplideSlide>
+            <Image
+              src="/tanaka.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto md:hidden block"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              src="/nagasawa.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto md:hidden block"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+              src="/yamamoto.png"
+              alt="topimage"
+              width={370}
+              height={480}
+              className=" w-screen h-auto md:hidden block"
+            />
+          </SplideSlide>
+        </Splide>
+      </div>
     </section>
   );
 };
