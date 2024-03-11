@@ -84,8 +84,8 @@ const SumahoHeader = () => {
           <ul className="flex items-center gap-8">
           {sns.map((sns) => {
             return (
-              <li>
-              <Link href={sns.href} key={sns.href}>
+              <li key={sns.href}>
+              <Link href={sns.href} >
                 <Image src={sns.src} width={36} height={36} alt="sns" />
               </Link>
               </li>
