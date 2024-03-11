@@ -8,7 +8,7 @@ const Business = () => {
     <div className='mb-8'>
     <Title en="BUSINESS" ja="事業内容" center="text-center"/>
     </div>
-    <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-xs md:text-lg'>
+    <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg'>
       <div>
         <div className='relative'>
         <Image src="/4.jpg" alt="photo" width={1920} height={1080} className=' aspect-video mb-4' />

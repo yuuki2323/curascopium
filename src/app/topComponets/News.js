@@ -8,7 +8,7 @@ const News = async () => {
   const { contents } = await getList();
 
   return (
-    <section className="container p-4 mx-auto text-xs md:text-xl">
+    <section className="container p-4 mx-auto text-sm md:text-xl">
       <Title en="NEWS" ja="お知らせ" />
 
       {contents.map((post) => (
