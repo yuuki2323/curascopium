@@ -21,7 +21,7 @@ const News = async () => {
 
       ))}
 
-      <Link href="/" className="block text-white ">
+      <Link href="/news" className="block text-white ">
         <p className=" text-right">一覧を見る</p>
       </Link>
     </section>

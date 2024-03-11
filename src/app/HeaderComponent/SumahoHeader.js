@@ -14,7 +14,7 @@ const SumahoHeader = () => {
   ];
 
   const navi = [
-    { href: "/", nav: "お知らせ" },
+    { href: "/news", nav: "お知らせ" },
     { href: "/", nav: "チームの歴史" },
     { href: "/", nav: "活動目的" },
     { href: "/", nav: "メンバー紹介" },
