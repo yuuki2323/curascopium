@@ -4,7 +4,7 @@ import React from 'react'
 const Topphoto = () => {
   return (
     <section className=' relative -z-50'>
-                <Image src="/sumahotopphoto.jpg"
+                <Image src="/sumahoTopPhoto.jpg"
           alt="topimage"
           width={780}
           height={1280}
