@@ -15,11 +15,11 @@ const SumahoHeader = () => {
 
   const navi = [
     { href: "/news", nav: "お知らせ" },
-    { href: "#history", nav: "チームの歴史" },
-    { href: "#purpose", nav: "活動目的" },
-    { href: "#member", nav: "メンバー紹介" },
-    { href: "#business", nav: "事業内容" },
-    { href: "#contact", nav: "お問い合わせ" },
+    { href: "/#history", nav: "チームの歴史" },
+    { href: "/#purpose", nav: "活動目的" },
+    { href: "/#member", nav: "メンバー紹介" },
+    { href: "/#business", nav: "事業内容" },
+    { href: "/#contact", nav: "お問い合わせ" },
   ];
 
   const [isOpen, setOpen] = useState(true);
