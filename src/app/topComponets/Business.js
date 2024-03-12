@@ -4,7 +4,7 @@ import Title from '../ui/Title'
 
 const Business = () => {
   return (
-    <section className='container p-4 mx-auto'>
+    <section className='container p-4 mx-auto' id="business">
     <div className='mb-8'>
     <Title en="BUSINESS" ja="事業内容" center="text-center"/>
     </div>

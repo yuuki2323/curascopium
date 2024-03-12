@@ -3,7 +3,7 @@ import Title from "../ui/Title";
 
 const Contact = () => {
   return (
-    <section className="container p-4 mx-auto text-white text-sm md:text-lg">
+    <section className="container p-4 mx-auto text-white text-sm md:text-lg" id="contact">
       <div className="mb-8">
       <Title en="CONTACT" ja="お問い合わせ" center="text-center"/>
 

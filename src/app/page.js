@@ -7,6 +7,7 @@ import Purpose from "./topComponets/Purpose";
 import Member from "./topComponets/Member";
 import Business from "./topComponets/Business";
 import Contact from "./topComponets/Contact";
+import ReturnTopButton from "./topComponets/ReturnTopButton";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Member/>
         <Business/>
         <Contact/>
+        <ReturnTopButton/>
     </main>
   );
 }

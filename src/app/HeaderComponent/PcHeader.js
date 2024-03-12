@@ -11,11 +11,11 @@ const PcHeader = () => {
 
   const navi = [
     { href: "/news", nav: "お知らせ" },
-    { href: "/", nav: "チームの歴史" },
-    { href: "/", nav: "活動目的" },
-    { href: "/", nav: "メンバー紹介" },
-    { href: "/", nav: "事業内容" },
-    { href: "/", nav: "お問い合わせ" },
+    { href: "#history", nav: "チームの歴史" },
+    { href: "#purpose", nav: "活動目的" },
+    { href: "#member", nav: "メンバー紹介" },
+    { href: "#business", nav: "事業内容" },
+    { href: "#contact", nav: "お問い合わせ" },
   ];
   return (
     <header className="hidden md:flex md:p-4 lg:py-6 

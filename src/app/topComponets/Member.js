@@ -6,7 +6,7 @@ import "@splidejs/splide/css";
 import Image from "next/image";
 const Member = () => {
   return (
-    <section className="container p-4 mx-auto">
+    <section className="container p-4 mx-auto" id="member">
       <div className="mb-8">
         <Title en="MEMBER" ja="メンバー紹介" center="text-center" />
       </div>
