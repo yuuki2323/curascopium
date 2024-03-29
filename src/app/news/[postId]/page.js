@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import React from "react";
 import parse from "html-react-parser";
 import { format } from "date-fns";
