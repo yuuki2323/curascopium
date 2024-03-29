@@ -1,8 +1,7 @@
 import React from "react";
-
+import parse from "html-react-parser";
 import { format } from "date-fns";
 import Header from "../../topComponets/Header.js";
-import Link from "next/link.js";
 import { getList,getDetail } from "../../../../libs/client.js";
 
 export async function generateStaticParams() {
