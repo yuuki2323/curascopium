@@ -18,10 +18,18 @@ if (!process.env.MICROCMS_SERVICE_DOMAIN) {
    endpoint: "news",
    queries,
   });
- 
-  // データの取得が目視しやすいよう明示的に遅延効果を追加
-  await new Promise((resolve) => setTimeout(resolve, 3000));
- 
   return listData;
  };
  
+ export const getDetail = async (
+  contentId,
+  queries
+ ) => {
+  const detailData = await client.getListDetail({
+   endpoint: "news",
+   contentId,
+   queries,
+  });
+
+  return detailData;
+ };
