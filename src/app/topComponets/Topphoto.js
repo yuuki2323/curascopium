@@ -8,7 +8,7 @@ const Topphoto = () => {
           alt="topimage"
           width={780}
           height={1280}
-          className=" object-cover md:hidden block "/>
+          className=" object-cover md:hidden block w-screen"/>
           <p className=' text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-5/6 md:hidden text-3xl'>視覚障がい者に<br/>宇宙の素晴らしさを<br/>伝えて感動を共有する</p>
 
       <Image src="/topphoto.jpg"

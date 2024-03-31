@@ -11,16 +11,19 @@ import ReturnTopButton from "./topComponets/ReturnTopButton";
 
 export default function Home() {
   return (
-    <main className=" ">
+    <main>
       <Header />
       <Topphoto/>
-        <News/>
+      <div className="mx-8 md:mx-0">
+      <News/>
         <History/>
         <Purpose/>
         <Member/>
         <Business/>
         <Contact/>
         <ReturnTopButton/>
+      </div>
+
     </main>
   );
 }

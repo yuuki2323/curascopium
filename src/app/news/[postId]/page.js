@@ -15,7 +15,7 @@ const Home = async ({ params: { postId } }) => {
       <section className="container pt-36 pb-4 text-xl mx-auto">
         <div>
           <h1>{post.title}</h1>
-          <h2>{format(new Date(post.createdAt), "yyyy年MM月dd日")}</h2>
+          <h2>{format(new Date(post.createdAt), "yyyy/MM/dd")}</h2>
           <div>{post.content}</div>
         </div>
       </section>
