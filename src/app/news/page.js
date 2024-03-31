@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import Title from "../ui/Title.js";
 import Header from "../topComponets/Header.js";
 import Link from "next/link.js";
-import parse from "html-react-parser";
 
 const Home = async () => {
   const { contents } = await getList();
