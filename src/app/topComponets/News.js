@@ -16,7 +16,10 @@ const News = async () => {
           <dt >
             {format(new Date(post.createdAt), "yyyy/MM/dd")}
           </dt>
+          <Link href={`/news/${post.id}`}>
           <dd>{post.title}</dd>
+          </Link>
+          
         </dl>
 
       ))}

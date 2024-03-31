@@ -10,11 +10,11 @@ const Home = async () => {
   return (
     <main className="">
         <Header />
-        <section className="container pt-36 pb-4 text-xl mx-auto">
+        <section className="container p-4 mx-auto text-sm md:text-xl">
           <Title en="NEWS" ja="お知らせ" />
           {contents.map((post) => (
             <dl
-              className="text-white border-b border-white flex gap-8 py-2 mb-2"
+              className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2"
               key={post.id}
             >
               <dt>{format(new Date(post.createdAt), "yyyy年MM月dd日")}</dt>
