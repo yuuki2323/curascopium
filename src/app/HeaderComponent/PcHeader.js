@@ -4,9 +4,9 @@ import React from "react";
 
 const PcHeader = () => {
   const sns = [
-    { href: "/", src: "/x.png" },
-    { href: "/", src: "/Instagram.png" },
-    { href: "/", src: "/inw.png" },
+    { href: "https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w", src: "/x.png" },
+    { href: "https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==", src: "/Instagram.png" },
+    { href: "https://www.linkedin.com/company/curascopium138/", src: "/inw.png" },
   ];
 
   const navi = [
