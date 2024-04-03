@@ -1,4 +1,4 @@
-
+import parse from 'html-react-parser';
 export const runtime = 'edge';
 import React from "react";
 import { format } from "date-fns";
@@ -12,11 +12,11 @@ const Home = async ({ params: { postId } }) => {
   return (
     <main className="">
       <Header />
-      <section className="container pt-36 pb-4 text-xl mx-auto">
+      <section className="container mx-auto mt-20 md:mt-32 text-sm md:text-xl text-white">
         <div>
-          <h1>{post.title}</h1>
-          <h2>{format(new Date(post.createdAt), "yyyy/MM/dd")}</h2>
-          <div>{post.content}</div>
+          <h1 className='mb-4 md:mb-12'>{post.title}</h1>
+          {/* <h2>{format(new Date(post.createdAt), "yyyy/MM/dd")}</h2> */}
+          <div>{parse(post.contant)}</div>
         </div>
       </section>
     </main>
