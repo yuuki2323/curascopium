@@ -87,7 +87,7 @@ const SumahoHeader = () => {
           {sns.map((sns) => {
             return (
               <li key={sns.href}>
-              <Link href={sns.href} >
+              <Link href={sns.href} target="_blank" rel="noopener noreferrer">
                 <Image src={sns.src} width={36} height={36} alt="sns" />
               </Link>
               </li>
