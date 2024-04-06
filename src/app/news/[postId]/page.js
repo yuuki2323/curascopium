@@ -14,7 +14,7 @@ const html = post.content
       <Header />
       <section className="container md:mx-auto mt-24 md:mt-36 text-sm md:text-xl text-white">
         <div>
-          <h1 className='mb-4 md:mb-12'>{post.title}</h1>
+          <h1 className='mb-4 md:mb-12 text-lg md:text-2xl '>{post.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }}></div>
         </div>
       </section>

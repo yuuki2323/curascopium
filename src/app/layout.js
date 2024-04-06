@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Curascopium",
-  description: "Curascopium",
+  description: "「視覚障がい者へ宇宙の素晴らしさを伝えて、感動を共有する」をモットーに活動している非営利団体です。",
 };
 
 export default function RootLayout({ children }) {
