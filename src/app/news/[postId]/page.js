@@ -16,7 +16,7 @@ const html = post.content
         <div>
           <p className="text-center mb-2 md:mb-6">{format(new Date(post.createdAt), "yyyy/MM/dd")}</p>
           <h2 className='mb-4 md:mb-12 text-2xl md:text-4xl text-center'>{post.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: html }} className="mx-8"></div>
+          <div dangerouslySetInnerHTML={{ __html: html }}></div>
         </div>
       </section>
     </main>
