@@ -14,6 +14,7 @@ export default function Home() {
     <main>
       <Header />
       <Topphoto/>
+      
       <div className="mx-8 md:mx-0">
       <News/>
         <History/>

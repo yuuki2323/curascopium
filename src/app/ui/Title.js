@@ -1,5 +1,6 @@
 import React from 'react'
 
+// 各項目のタイトルのUI
 const Title = (props) => {
   return (
     <div className='mb-4 md:mb-8'>

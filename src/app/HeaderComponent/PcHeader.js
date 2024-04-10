@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 
 const PcHeader = () => {
+
+  // リンクやナビをまとめてます
   const sns = [
     { href: "https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w", src: "/x.png" },
     { href: "https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==", src: "/Instagram.png" },
@@ -17,15 +19,22 @@ const PcHeader = () => {
     { href: "/#business", nav: "事業内容" },
     { href: "/#contact", nav: "お問い合わせ" },
   ];
+
+
   return (
+    // ヘッダー
     <header className="hidden md:flex md:p-4 lg:py-6 
     justify-between container mx-auto absolute top-0 right-0 left-0 z-10 ">
+
+{/* アイコン */}
       <h1>
         <Link href="/">
           <Image src="/icon.png" alt="photo" width={88} height={88} />
         </Link>
       </h1>
+
       <div className="ml-auto">
+{/* sns */}
         <div className="flex items-center justify-end gap-4">
           {sns.map((sns) => {
             return (
@@ -35,6 +44,7 @@ const PcHeader = () => {
             );
           })}
         </div>
+{/* ナビ */}
         <nav className="hidden md:block">
           <ul className=" md:flex md:justify-between md:items-center md:gap-6 md:mt-4">
             {navi.map((navi) => {
@@ -48,6 +58,7 @@ const PcHeader = () => {
             })}
           </ul>
         </nav>
+
       </div>
     </header>
   );
