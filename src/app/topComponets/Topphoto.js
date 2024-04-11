@@ -30,7 +30,7 @@ const Topphoto = () => {
       <p className=" text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max hidden md:block text-3xl lg:text-5xl">
         視覚障がい者に宇宙の素晴らしさを
         <br />
-        伝えて感動を共有する
+        伝えて感動を共有する。
       </p>
     </section>
   );
