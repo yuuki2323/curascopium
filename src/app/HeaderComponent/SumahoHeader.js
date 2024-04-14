@@ -65,8 +65,7 @@ const SumahoHeader = () => {
           isOpen
             ? "fixed top-0 left-0 opacity-0 transition-all duration-200 ease-linear invisible w-screen h-screen"
             : " fixed top-0 left-0 opacity-100 transition-all duration-200 ease-linear bg-bg-black bg-bg bg-contain w-screen h-screen visible z-50"
-        }
-      >
+        }>
         {/* アイコン */}
         <h1>
           <Link href="/">
@@ -110,8 +109,7 @@ const SumahoHeader = () => {
                     <Link
                       href={sns.href}
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                      rel="noopener noreferrer">
                       <Image src={sns.src} width={36} height={36} alt="sns" />
                     </Link>
                   </li>

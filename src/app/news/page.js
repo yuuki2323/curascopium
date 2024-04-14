@@ -15,8 +15,7 @@ const Home = async () => {
         {contents.map((post) => (
           <dl
             className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2 tabular-nums"
-            key={post.id}
-          >
+            key={post.id}>
             <dt>{format(new Date(post.createdAt), "yyyy/MM/dd")}</dt>
             <Link href={`/news/${post.id}`}>
               <dd>{post.title}</dd>

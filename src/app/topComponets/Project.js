@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import Title from "../ui/Title";
 
-const Business = () => {
+const Project = () => {
   return (
     <section className=" container p-4 mx-auto" id="business">
       <div className="mb-8">
-        <Title en="BUSINESS" ja="事業内容" center="text-center" />
+        <Title en="PROJECT" ja="事業内容" center="text-center" />
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg">
         {/* １つめ */}
@@ -53,4 +53,4 @@ const Business = () => {
   );
 };
 
-export default Business;
+export default Project;

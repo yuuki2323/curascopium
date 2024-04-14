@@ -9,19 +9,17 @@ const News = async () => {
 
   return (
     <section className="container p-4 mx-auto text-sm md:text-xl">
-      <Title en="NEWS" ja="お知らせ" />
+      <Title en="NEWS" ja="お知らせ" center="text-center" />
 
       {contents.slice(0, 5).map((post) => (
-        <dl className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2 tabular-nums" key={post.id}>
-          <dt >
-            {format(new Date(post.createdAt), "yyyy/MM/dd")}
-          </dt>
+        <dl
+          className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2 tabular-nums"
+          key={post.id}>
+          <dt>{format(new Date(post.createdAt), "yyyy/MM/dd")}</dt>
           <Link href={`/news/${post.id}`}>
-          <dd>{post.title}</dd>
+            <dd>{post.title}</dd>
           </Link>
-          
         </dl>
-
       ))}
 
       <Link href="/news" className="block text-white ">

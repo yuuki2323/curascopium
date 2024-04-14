@@ -44,9 +44,12 @@ const ReturnTopButton = () => {
   const style = isButtonActive ? activeStyle : normalStyle;
 
   return (
-    <button onClick={returnTop} className=" bottom-6 right-6 fixed bg-bg-black rounded-full p-1 " style={style}>
+    <button
+      onClick={returnTop}
+      className=" bottom-6 right-6 fixed bg-bg-black rounded-full p-1 "
+      style={style}>
       <IconContext.Provider value={{ color: "white", size: "32px" }}>
-      <AiOutlineUp className=""/>
+        <AiOutlineUp className="" />
       </IconContext.Provider>
     </button>
   );

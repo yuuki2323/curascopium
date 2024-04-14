@@ -5,8 +5,7 @@ const Contact = () => {
   return (
     <section
       className="container p-4 mx-auto text-white text-sm md:text-lg"
-      id="contact"
-    >
+      id="contact">
       <div className="mb-8">
         <Title en="CONTACT" ja="お問い合わせ" center="text-center" />
       </div>
@@ -15,10 +14,9 @@ const Contact = () => {
         action="https://ssl.form-mailer.jp/fm/service/Forms/confirm"
         method="post"
         name="form1"
-        ENCTYPE="multipart/form-data"
-        accept-charset="UTF-8"
-        className="bg-contact mx-auto md:w-3/4 bg-bg bg-contain py-12"
-      >
+        encType="multipart/form-data"
+        acceptCharset="UTF-8"
+        className="bg-contact mx-auto md:w-3/4 bg-bg bg-contain py-12">
         <input type="hidden" name="key" value="d7efceec813650" />
         <div className="w-10/12 md:w-8/12 mx-auto">
           <div className="mb-4">
@@ -64,8 +62,7 @@ const Contact = () => {
                 cols="30"
                 rows="12"
                 placeholder=""
-                className=" w-full p-1 text-black"
-              ></textarea>
+                className=" w-full p-1 text-black"></textarea>
             </p>
           </div>
           .
@@ -82,8 +79,7 @@ const Contact = () => {
               href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/d7efceec813650&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer"
               target="_blank"
               id="powered"
-              className="text-xs"
-            >
+              className="text-xs">
               Powered by FormMailer.
             </a>
           </p>
