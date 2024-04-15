@@ -8,9 +8,29 @@ import { IconContext } from 'react-icons';
 import * as Constants from '../constants';
 
 const MobileHeader = () => {
+  const sns = [
+    {
+      href: 'https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w',
+      src: '/sns/x.png',
+    },
+    {
+      href: 'https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==',
+      src: '/sns/Instagram.png',
+    },
+    {
+      href: 'https://www.linkedin.com/company/curascopium138/',
+      src: '/sns/LinkedIn.png',
+    },
+  ];
 
-  const sns = Object.values(Constants.SNS);
-  const navi = Object.values(Constants.Navi);
+  const navi = [
+    { href: '/news', nav: 'お知らせ' },
+    { href: '/#history', nav: 'チームの歴史' },
+    { href: '/#purpose', nav: '活動目的' },
+    { href: '/#member', nav: 'メンバー紹介' },
+    { href: '/#business', nav: '事業内容' },
+    { href: '/#contact', nav: 'お問い合わせ' },
+  ];
 
   // メニューの開閉を定義してます
   const [isOpen, setOpen] = useState(true);
