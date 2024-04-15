@@ -1,12 +1,12 @@
-import React from "react";
-import PcHeader from "../HeaderComponent/PcHeader";
-import SumahoHeader from "../HeaderComponent/SumahoHeader";
+import React from 'react';
+import PcHeader from '../HeaderComponent/PcHeader';
+import MobileHeader from '../HeaderComponent/MobileHeader';
 
 const Header = () => {
   return (
     <>
       <PcHeader />
-      <SumahoHeader />
+      <MobileHeader />
     </>
   );
 };
