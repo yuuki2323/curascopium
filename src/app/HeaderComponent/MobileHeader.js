@@ -22,6 +22,8 @@ const MobileHeader = () => {
       src: '/sns/LinkedIn.png',
     },
   ];
+  const snst = Object.values(SNS);
+  console.log(snst.toString());
 
   const navi = [
     { href: '/news', nav: 'お知らせ' },
