@@ -1,25 +1,31 @@
-import Image from "next/image";
-import React from "react";
-import Title from "../ui/Title";
+import Image from 'next/image';
+import React from 'react';
+import Title from '../ui/Title';
 
 const Project = () => {
   return (
-    <section className=" container p-4 mx-auto" id="business">
-      <div className="mb-8">
-        <Title en="PROJECT" ja="事業内容" center="text-center" />
+    <section
+      className=' container p-4 mx-auto'
+      id='business'>
+      <div className='mb-8'>
+        <Title
+          en='PROJECT'
+          ja='事業内容'
+          center='text-center'
+        />
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg">
+      <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg'>
         {/* １つめ */}
         <div>
-          <div className="relative">
+          <div className='relative'>
             <Image
-              src="/4.jpg"
-              alt="photo"
+              src='/project/education.jpg'
+              alt='photo'
               width={1920}
               height={1080}
-              className=" aspect-video mb-4"
+              className=' aspect-video mb-4'
             />
-            <p className="absolute bottom-0 left-0 py-2 px-4 text-center bg-black bg-opacity-70">
+            <p className='absolute bottom-0 left-0 py-2 px-4 text-center bg-black bg-opacity-70'>
               視覚障害者教育
             </p>
           </div>
@@ -31,15 +37,15 @@ const Project = () => {
 
         {/* ２つめ */}
         <div>
-          <div className="relative">
+          <div className='relative'>
             <Image
-              src="/5.jpg"
-              alt="photo"
+              src='/project/planetarium.jpg'
+              alt='photo'
               width={1920}
               height={1080}
-              className=" aspect-video mb-4"
+              className=' aspect-video mb-4'
             />
-            <p className="absolute bottom-0 left-0 py-2 px-4 text-center bg-black bg-opacity-70">
+            <p className='absolute bottom-0 left-0 py-2 px-4 text-center bg-black bg-opacity-70'>
               次世代プラネタリウム
             </p>
           </div>
