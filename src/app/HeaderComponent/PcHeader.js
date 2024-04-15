@@ -23,7 +23,7 @@ const PcHeader = () => {
     { href: '/#history', nav: 'チームの歴史' },
     { href: '/#purpose', nav: '活動目的' },
     { href: '/#member', nav: 'メンバー紹介' },
-    { href: '/#business', nav: '事業内容' },
+    { href: '/#project', nav: '事業内容' },
     { href: '/#contact', nav: 'お問い合わせ' },
   ];
 

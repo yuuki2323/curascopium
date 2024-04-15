@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <section
       className=' container p-4 mx-auto'
-      id='business'>
+      id='project'>
       <div className='mb-8'>
         <Title
           en='PROJECT'

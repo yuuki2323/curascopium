@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
 import { IconContext } from 'react-icons';
-import * as Constants from '../constants';
+import { SNS } from '../constants';
 
 const MobileHeader = () => {
   const sns = [
@@ -28,7 +28,7 @@ const MobileHeader = () => {
     { href: '/#history', nav: 'チームの歴史' },
     { href: '/#purpose', nav: '活動目的' },
     { href: '/#member', nav: 'メンバー紹介' },
-    { href: '/#business', nav: '事業内容' },
+    { href: '/#project', nav: '事業内容' },
     { href: '/#contact', nav: 'お問い合わせ' },
   ];
 

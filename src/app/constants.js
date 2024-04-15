@@ -30,8 +30,8 @@ export const Navi = Object.freeze({
     href: '/#member',
     nav: 'メンバー紹介',
   },
-  business: {
-    href: '/#business',
+  project: {
+    href: '/#project',
     nav: '事業内容',
   },
   contact: {
