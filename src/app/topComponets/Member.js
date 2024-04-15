@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import Title from "../ui/Title";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/css";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import Title from '../ui/Title';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/css';
+import Image from 'next/image';
 const Member = () => {
   return (
     <section
