@@ -9,7 +9,7 @@ export const SNS = Object.freeze({
   },
   linkedin: {
     href: 'https://www.linkedin.com/company/curascopium138/',
-    src: '/sns/linkedIn.png',
+    src: '/sns/LinkedIn.png',
   },
 });
 
