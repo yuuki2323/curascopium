@@ -44,7 +44,7 @@ export const MemberProfile = Object.freeze({
   tanaka: {
     name: '田中 優作',
     alphabet: 'Yusaku Tanaka',
-    description: 'UC バークレー\n[宇宙物理学 / 障害者学]',
+    description: 'UC バークレー\n[宇宙物理学 / 障がい者学]',
   },
   yamamoto: {
     name: '山本 暖',
@@ -76,7 +76,8 @@ export const MemberProfile = Object.freeze({
   taniguchi: {
     name: '谷口 知佳',
     alphabet: 'Tomoka Taniguchi',
-    description: '上智大学卒\n[政治学 / 社会科学]\nUC バークレー修士\n[ランドスケープアーキテクチャ]',
+    description:
+      '上智大学卒\n[政治学 / 社会科学]\nUC バークレー修士\n[ランドスケープアーキテクチャ]',
   },
   yamada: {
     name: '山田 楽',
@@ -91,7 +92,7 @@ export const MemberProfile = Object.freeze({
   sato: {
     name: '佐藤 さくや',
     alphabet: 'Sakuya Sato',
-    description: 'UC バークレー\n[コンピューティングミュージック]',
+    description: 'UC バークレー\n[環境学 / 音楽学]',
   },
   matsunaga: {
     name: '松永 大志',
