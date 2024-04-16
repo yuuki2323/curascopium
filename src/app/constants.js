@@ -44,7 +44,7 @@ export const MemberProfile = Object.freeze({
   tanaka: {
     name: '田中 優作',
     alphabet: 'Yusaku Tanaka',
-    description: 'UC バークレー\n[宇宙物理学 / 障がい学]',
+    description: 'UC バークレー\n[宇宙物理学 / 障がい者学]',
   },
   yamamoto: {
     name: '山本 暖',
