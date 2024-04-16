@@ -5,6 +5,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
 import Image from 'next/image';
 import { MemberProfile } from '../constants';
+import { mediaQuery, useMediaQuery } from '../useMediaQuery';
 
 const MemberCard = ({ id, name, description }) => {
   const formattedText = description.split('\n').map((item, index) => {
@@ -33,6 +34,7 @@ const MemberCard = ({ id, name, description }) => {
 };
 
 const Member = () => {
+  const isMd = useMediaQuery(mediaQuery.md);
   const members = Object.entries(MemberProfile);
   return (
     <section
@@ -52,7 +54,7 @@ const Member = () => {
           interval: 4000,
           type: 'loop',
           speed: 1200,
-          perPage: 3,
+          perPage: isMd ? 2 : 3,
           perMove: 1,
           gap: 24,
           pagination: false,
