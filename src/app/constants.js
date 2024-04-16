@@ -60,7 +60,7 @@ export const MemberProfile = Object.freeze({
     name: '眞田 聖光',
     alphabet: 'Saniya Sanada',
     description:
-      '東京大学 大学院卒\n[惑星科学]\nUT オースティン 大学院\n[惑星科学]',
+      '東京大学 大学院卒\n[惑星科学]\nUT サンアントニオ 大学院\n[惑星科学]',
   },
   harimoto: {
     name: '張本 宏光',
