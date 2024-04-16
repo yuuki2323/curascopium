@@ -1,15 +1,11 @@
 import React from 'react';
 
 // 各項目のタイトルのUI
-const Title = (props) => {
+const Title = ({ en, ja }) => {
   return (
     <div className='mb-4 md:mb-8'>
-      <h2 className={`text-3xl md:text-6xl text-title  ${props.center}`}>
-        {props.en}
-      </h2>
-      <p className={`text-white text-lg md:text-2xl ${props.center}`}>
-        {props.ja}
-      </p>
+      <h2 className={`text-3xl md:text-6xl text-title text-center`}>{en}</h2>
+      <p className={`text-white text-lg md:text-2xl text-center`}>{ja}</p>
     </div>
   );
 };

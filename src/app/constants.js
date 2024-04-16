@@ -40,6 +40,33 @@ export const Navi = Object.freeze({
   },
 });
 
+export const SectionInfo = Object.freeze({
+  news: {
+    en: 'NEWS',
+    ja: 'お知らせ',
+  },
+  history: {
+    en: 'HISTORY',
+    ja: 'チームの歴史',
+  },
+  purpose: {
+    en: 'PURPOSE',
+    ja: '活動目的',
+  },
+  member: {
+    en: 'MEMBER',
+    ja: 'メンバー紹介',
+  },
+  project: {
+    en: 'PROJECT',
+    ja: '事業内容',
+  },
+  contact: {
+    en: 'CONTACT',
+    ja: 'お問い合わせ',
+  },
+});
+
 export const MemberProfile = Object.freeze({
   tanaka: {
     name: '田中 優作',
@@ -98,5 +125,18 @@ export const MemberProfile = Object.freeze({
     name: '松永 大志',
     alphabet: 'Taishi Matsunaga',
     description: 'UC バークレー\n[政治経済学 / データサイエンス]',
+  },
+});
+
+export const ProjectInfo = Object.freeze({
+  education: {
+    title: '視覚障がい者教育',
+    description:
+      '視覚障がいを持つ高校二年生を対象に宇宙講座を行った。目的は、視覚に依存しない方法で天文学の理解を深め、生徒たちと感動を共有し、彼らへ大学進学の可能性を示すこと。',
+  },
+  planetarium: {
+    title: '次世代プラネタリウム',
+    description:
+      '仙台市天文台とのコラボレーション視覚障がいを持つ方々と晴眼者が共に感動できるプラネタリウムを制作中。アドバイザーとして落合陽一氏を迎え、前例のないプラネタリウムに挑戦中。',
   },
 });
