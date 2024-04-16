@@ -6,13 +6,10 @@ import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
 import { IconContext } from 'react-icons';
 import { Navi, SNS } from '../constants';
-import * as Constants from '../constants';
 
 const MobileHeader = () => {
   const navi = Object.values(Navi);
   const sns = Object.values(SNS);
-
-  const snso = Constants.SNS;
 
   // メニューの開閉を定義してます
   const [isOpen, setOpen] = useState(true);
