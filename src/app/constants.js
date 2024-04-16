@@ -42,6 +42,10 @@ export const Navi = Object.freeze({
     href: '/#contact',
     nav: 'お問い合わせ',
   },
+  contacts: {
+    href: '/#contact',
+    nav: 'お問い合わせせせ',
+  },
 });
 
 export const MemberProfile = Object.freeze({
