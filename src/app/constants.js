@@ -11,6 +11,10 @@ export const SNS = Object.freeze({
     href: 'https://www.linkedin.com/company/curascopium138/',
     src: '/sns/linkedIn.png',
   },
+  github: {
+    href: 'https://www.linkedin.com/company/curascopium138/',
+    src: '/sns/linkedIn.png',
+  },
 });
 
 export const Navi = Object.freeze({

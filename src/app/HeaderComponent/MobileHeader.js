@@ -23,7 +23,6 @@ const MobileHeader = () => {
     },
   ];
   const snst = Object.values(SNS);
-  console.log(snst.toString());
 
   const navi = [
     { href: '/news', nav: 'お知らせ' },
@@ -113,7 +112,7 @@ const MobileHeader = () => {
             </ul>
             {/* SNS */}
             <ul className='flex items-center gap-8'>
-              {sns.map((sns) => {
+              {snst.map((sns) => {
                 return (
                   <li key={sns.href}>
                     <Link
