@@ -71,12 +71,12 @@ export const MemberProfile = Object.freeze({
   miyagi: {
     name: '宮城 理',
     alphabet: 'Satoshi Miyagi',
-    description: '早稲田大学卒\n[国際教養学部]',
+    description: '早稲田大学卒\n[国際教養学]',
   },
   taniguchi: {
     name: '谷口 知佳',
     alphabet: 'Tomoka Taniguchi',
-    description: 'UC バークレー修士\n[ランドスケープアーキテクチャ]',
+    description: '上智大学卒\n[政治学 / 社会科学]\nUC バークレー修士\n[ランドスケープアーキテクチャ]',
   },
   yamada: {
     name: '山田 楽',
@@ -86,7 +86,7 @@ export const MemberProfile = Object.freeze({
   kurosaka: {
     name: '黒坂 美桜',
     alphabet: 'Mio Kurosaka',
-    description: 'UC バークレー\n[アート]',
+    description: 'UC バークレー\n[芸術実践]',
   },
   sato: {
     name: '佐藤 さくや',
