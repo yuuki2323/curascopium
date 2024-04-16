@@ -28,9 +28,11 @@ const Topphoto = () => {
         className=' aspect-video  hidden mx-auto  md:block h-screen'
       />
       <p className=' text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max hidden md:block text-3xl lg:text-5xl'>
-        視覚障がい者に宇宙の素晴らしさを
+        視覚障がい者に
         <br />
-        伝えて感動を共有する
+        宇宙の素晴らしさを伝えて
+        <br />
+        感動を共有する
       </p>
     </section>
   );
