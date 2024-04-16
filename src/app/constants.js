@@ -43,38 +43,59 @@ export const Navi = Object.freeze({
 export const MemberProfile = Object.freeze({
   tanaka: {
     name: '田中 優作',
-    description:
-      'カリフォルニア大学バークレー校学部\n宇宙物理学専攻、障害者学副専攻',
+    alphabet: 'Yusaku Tanaka',
+    description: 'UC バークレー\n[宇宙物理学 / 障害者学]',
   },
   yamamoto: {
     name: '山本 暖',
-    description:
-      'カリフォルニア大学バークレー校卒\n生物学専攻、データサイエンス副専攻',
+    alphabet: 'Haru Yamamoto',
+    description: 'UC バークレー卒\n[生物学 / データサイエンス]',
   },
   nagasawa: {
     name: '長澤 赳志',
-    description: 'カリフォルニア大学バークレー校卒\n宇宙物理学専攻',
+    alphabet: 'Takeshi Nagasawa',
+    description: 'UC バークレー卒\n[宇宙物理学]',
   },
   sanada: {
     name: '眞田 聖光',
-    description: '東京大学卒業[惑星科学]\nテキサス大学院[惑星科学]',
+    alphabet: 'Saniya Sanada',
+    description:
+      '東京大学 大学院卒\n[惑星科学]\nUT オースティン 大学院\n[惑星科学]',
   },
   harimoto: {
     name: '張本 宏光',
+    alphabet: 'Hiromitsu Harimoto',
     description:
-      'カリフォルニア大学バークレー校卒 [Biochemistry/Data Science]\nマサチューセッツ工科大学 元研究員\n東京大学医科学研究所 研究員',
+      'UC バークレー卒\n[生化学 / データサイエンス]\nMIT 元研究員\n東京大学医科学研究所 研究員',
   },
   miyagi: {
     name: '宮城 理',
-    description: '早稲田大学卒業 [国際教養学部]',
+    alphabet: 'Satoshi Miyagi',
+    description: '早稲田大学卒\n[国際教養学部]',
   },
   taniguchi: {
     name: '谷口 知佳',
-    description:
-      'カリフォルニア大学バークレー校修士\nランドスケープアーキテクチャ専攻',
+    alphabet: 'Tomoka Taniguchi',
+    description: 'UC バークレー修士\n[ランドスケープアーキテクチャ]',
   },
   yamada: {
     name: '山田 楽',
-    description: 'カリフォルニア大学バークレー校\nコンピューターサイエンス専攻',
+    alphabet: 'Gaku Yamada',
+    description: 'UC バークレー\n[コンピューターサイエンス]',
+  },
+  kurosaka: {
+    name: '黒坂 美桜',
+    alphabet: 'Mio Kurosaka',
+    description: 'UC バークレー\n[アート]',
+  },
+  sato: {
+    name: '佐藤 さくや',
+    alphabet: 'Sakuya Sato',
+    description: 'UC バークレー\n[コンピューティングミュージック]',
+  },
+  matsunaga: {
+    name: '松永 大志',
+    alphabet: 'Taishi Matsunaga',
+    description: 'UC バークレー\n[政治経済学 / データサイエンス]',
   },
 });

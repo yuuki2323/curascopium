@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { MemberProfile } from '../constants';
 import { mediaQuery, useMediaQuery } from '../useMediaQuery';
 
-const MemberCard = ({ id, name, description }) => {
+const MemberCard = ({ id, name, alphabet, description }) => {
   const formattedText = description.split('\n').map((item, index) => {
     return (
       <React.Fragment key={index}>
@@ -18,7 +18,7 @@ const MemberCard = ({ id, name, description }) => {
   });
   return (
     <SplideSlide>
-      <div className='w-[370] h-[480]  bg-blue-950 bg-bg bg-contain p-3 md:p-8 text-center text-white'>
+      <div className='w-[370] h-[480] bg-blue-950 bg-bg bg-contain p-3 md:pt-0 md:px-10 text-center text-white'>
         <Image
           src={`/profile/${id}.png`}
           alt='topimage'
@@ -26,8 +26,11 @@ const MemberCard = ({ id, name, description }) => {
           height={300}
           className='w-screen h-auto rounded-full mb-2 md:p-4'
         />
-        <p className='text-sm md:text-2xl mb-2 md:mb-4'>{name}</p>
-        <p className='text-[8px] md:text-base h-10 md:h-16'>{formattedText}</p>
+        <p className='text-sm md:text-xl mb-1'>{name}</p>
+        <p className='text-xs md:text-sm mb-2 md:mb-2'>{alphabet}</p>
+        <p className='text-[8px] md:text-[12px] h-10 md:h-20'>
+          {formattedText}
+        </p>
       </div>
     </SplideSlide>
   );
@@ -50,7 +53,7 @@ const Member = () => {
 
       <Splide
         options={{
-          autoplay: true,
+          // autoplay: true,
           interval: 4000,
           type: 'loop',
           speed: 1200,
@@ -66,6 +69,7 @@ const Member = () => {
               key={member[0]}
               id={member[0]}
               name={member[1].name}
+              alphabet={member[1].alphabet}
               description={member[1].description}
             />
           );
