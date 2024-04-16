@@ -41,40 +41,42 @@ const Member = () => {
   const members = Object.entries(MemberProfile);
   return (
     <section
-      className='container p-4 mx-auto'
+      className='container p-4 mx-auto h-screen flex items-center justify-center'
       id='member'>
-      <div className='mb-8'>
-        <Title
-          en='MEMBER'
-          ja='メンバー紹介'
-          center='text-center'
-        />
-      </div>
+      <div className='w-full'>
+        <div className='mb-8'>
+          <Title
+            en='MEMBER'
+            ja='メンバー紹介'
+            center='text-center'
+          />
+        </div>
 
-      <Splide
-        options={{
-          // autoplay: true,
-          interval: 4000,
-          type: 'loop',
-          speed: 1200,
-          perPage: isMd ? 2 : 3,
-          perMove: 1,
-          gap: 24,
-          pagination: false,
-        }}
-        aria-label='profile-photo'>
-        {members.map((member) => {
-          return (
-            <MemberCard
-              key={member[0]}
-              id={member[0]}
-              name={member[1].name}
-              alphabet={member[1].alphabet}
-              description={member[1].description}
-            />
-          );
-        })}
-      </Splide>
+        <Splide
+          options={{
+            // autoplay: true,
+            interval: 4000,
+            type: 'loop',
+            speed: 1200,
+            perPage: isMd ? 2 : 3,
+            perMove: 1,
+            gap: 24,
+            pagination: false,
+          }}
+          aria-label='profile-photo'>
+          {members.map((member) => {
+            return (
+              <MemberCard
+                key={member[0]}
+                id={member[0]}
+                name={member[1].name}
+                alphabet={member[1].alphabet}
+                description={member[1].description}
+              />
+            );
+          })}
+        </Splide>
+      </div>
     </section>
   );
 };
