@@ -5,32 +5,11 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
 import { IconContext } from 'react-icons';
+import { Navi, SNS } from '../constants';
 
-const SumahoHeader = () => {
-  // リンクやナビをまとめてます
-  const sns = [
-    {
-      href: 'https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w',
-      src: '/sns/x.png',
-    },
-    {
-      href: 'https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==',
-      src: '/sns/Instagram.png',
-    },
-    {
-      href: 'https://www.linkedin.com/company/curascopium138/',
-      src: '/sns/LinkedIn.png',
-    },
-  ];
-
-  const navi = [
-    { href: '/news', nav: 'お知らせ' },
-    { href: '/#history', nav: 'チームの歴史' },
-    { href: '/#purpose', nav: '活動目的' },
-    { href: '/#member', nav: 'メンバー紹介' },
-    { href: '/#business', nav: '事業内容' },
-    { href: '/#contact', nav: 'お問い合わせ' },
-  ];
+const MobileHeader = () => {
+  const navi = Object.values(Navi);
+  const sns = Object.values(SNS);
 
   // メニューの開閉を定義してます
   const [isOpen, setOpen] = useState(true);
@@ -136,4 +115,4 @@ const SumahoHeader = () => {
   );
 };
 
-export default SumahoHeader;
+export default MobileHeader;

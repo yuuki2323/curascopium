@@ -1,4 +1,4 @@
-import { createClient } from "microcms-js-sdk";
+import { createClient } from 'microcms-js-sdk';
 
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
@@ -7,7 +7,7 @@ export const client = createClient({
 
 export const getList = async (queries) => {
   const listData = await client.getList({
-    endpoint: "news",
+    endpoint: 'news',
     queries,
   });
   return listData;
@@ -15,7 +15,7 @@ export const getList = async (queries) => {
 
 export const getDetail = async (postId, queries) => {
   const detailData = await client.getListDetail({
-    endpoint: "news",
+    endpoint: 'news',
     contentId: postId,
     queries,
   });

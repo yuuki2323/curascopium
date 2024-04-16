@@ -1,12 +1,18 @@
-import React from "react";
-import Title from "../ui/Title";
+import React from 'react';
+import Title from '../ui/Title';
 
 const History = () => {
   return (
-    <section className="container p-4 mx-auto " id="history">
-      <Title en="HISTORY" ja="チームの歴史" center="text-center" />
+    <section
+      className='container p-4 mx-auto '
+      id='history'>
+      <Title
+        en='HISTORY'
+        ja='チームの歴史'
+        center='text-center'
+      />
 
-      <p className="mx-auto text-white text-sm md:text-xl py-4 md:py-8">
+      <p className='mx-auto text-white text-sm md:text-xl py-4 md:py-8'>
         2022年、米国カリフォリニア大学バークレー校にて天文学専攻、障がい者学副専攻の田中優作により学生団体が創設される。
         <br />
         <br />

@@ -1,32 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Navi, SNS } from '../constants';
 
 const PcHeader = () => {
-  // リンクやナビをまとめてます
-  const sns = [
-    {
-      href: 'https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w',
-      src: '/sns/x.png',
-    },
-    {
-      href: 'https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==',
-      src: '/sns/Instagram.png',
-    },
-    {
-      href: 'https://www.linkedin.com/company/curascopium138/',
-      src: '/sns/LinkedIn.png',
-    },
-  ];
-
-  const navi = [
-    { href: '/news', nav: 'お知らせ' },
-    { href: '/#history', nav: 'チームの歴史' },
-    { href: '/#purpose', nav: '活動目的' },
-    { href: '/#member', nav: 'メンバー紹介' },
-    { href: '/#business', nav: '事業内容' },
-    { href: '/#contact', nav: 'お問い合わせ' },
-  ];
+  const sns = Object.values(SNS);
+  const navi = Object.values(Navi);
 
   return (
     // ヘッダー
