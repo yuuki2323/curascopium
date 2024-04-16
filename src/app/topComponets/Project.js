@@ -26,7 +26,7 @@ const Project = () => {
               className=' aspect-video mb-4'
             />
             <p className='absolute bottom-0 left-0 py-2 px-4 text-center bg-black bg-opacity-70'>
-              視覚障害者教育
+              視覚障がい者教育
             </p>
           </div>
 
