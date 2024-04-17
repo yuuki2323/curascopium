@@ -76,7 +76,7 @@ export const MemberProfile = Object.freeze({
   yamamoto: {
     name: '山本 暖',
     alphabet: 'Haru Yamamoto',
-    description: 'UC バークレー卒\n[生物学 / データサイエンス]',
+    description: 'UC バークレー卒\n[分子細胞生物学 / データサイエンス] \n イェール大学 医学部\n[MD-PhD]',
   },
   nagasawa: {
     name: '長澤 赳志',
@@ -119,7 +119,7 @@ export const MemberProfile = Object.freeze({
   sato: {
     name: '佐藤 さくや',
     alphabet: 'Sakuya Sato',
-    description: 'UC バークレー\n[環境学 / 音楽学]',
+    description: 'UC バークレー\n[社会環境学 / コンピューティングミュージック]',
   },
   matsunaga: {
     name: '松永 大志',
