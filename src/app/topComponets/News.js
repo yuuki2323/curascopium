@@ -1,10 +1,10 @@
-import Link from "next/link";
 import React from "react";
 import { getList } from "../../../libs/client";
 import { format } from "date-fns";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/navigation";
 
 const News = () => {
   const t = useTranslations("news");
