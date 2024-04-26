@@ -6,10 +6,13 @@ import { FaXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import { SNS, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 const MobileHeader = () => {
   const navi = Object.entries(SectionInfo);
   const sns = Object.values(SNS);
+
+  const t = useTranslations("header");
 
   // メニューの開閉を定義してます
   const [isOpen, setOpen] = useState(true);
@@ -73,9 +76,7 @@ const MobileHeader = () => {
                   <li key={navi[0]} className="mb-4 text-center">
                     <button onClick={handleMenu}>
                       <Link href={navi[1].href} className="block p-2">
-                        <p className="text-white text-base">
-                          {navi[0].toUpperCase()}
-                        </p>
+                        <p className="text-white text-base">{t(navi[0])}</p>
                       </Link>
                     </button>
                   </li>
