@@ -8,7 +8,13 @@ import { Link } from "@/navigation";
 
 const News = () => {
   const t = useTranslations("news");
-  return <CustomSection id="news" title={t("title")} body={<NewsBody />} />;
+  return (
+    <CustomSection
+      id="news"
+      title={t.rich("title", { br: () => <br /> })}
+      body={<NewsBody />}
+    />
+  );
 };
 
 const NewsBody = async () => {

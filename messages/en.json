@@ -12,19 +12,19 @@
     "Mobile": "Enthralling all<br></br>with the wonders of the universe"
   },
   "news": {
-    "title": "\b",
+    "title": "<br></br>",
     "more": "and more..."
   },
   "history": {
-    "title": "\b",
+    "title": "<br></br>",
     "body": "In 2022, Yusaku Tanaka, an astrophysics major at the University of California Berkeley, established Curascopium.<br></br><br></br>In 2023, team members were recruited from the University of California, Berkeley, Massachusetts Institute of Technology, the University of Tokyo, and the University of Tsukuba.<br></br><br></br>Currently, the team is composed of students from the U.S., Japan, and Europe with diverse backgrounds and academic interests."
   },
   "purpose": {
-    "title": "\b",
+    "title": "<br></br>",
     "body": "“Making astrophysics accessible to the visually impaired people”<br></br><br></br>We are currently working with various partners in the U.S. and Japan, such as the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create new events that can be enjoyed by both the visually impaired and the sighted."
   },
   "member": {
-    "title": "\b",
+    "title": "<br></br>",
     "profile": {
       "tanaka": {
         "name": "Yusaku<br></br>Tanaka",
@@ -89,7 +89,7 @@
     }
   },
   "project": {
-    "title": "\b",
+    "title": "<br></br>",
     "education": {
       "title": "Class for visually impaired",
       "body": "An interactive lecture was held for visually impaired high school students in their second year. The purpose was to deepen their understanding of astronomy in a non-visual way, to share the excitement of astronomy with them, and to suggest college as one of their future options because many visually impaired students tend to work after high school."
@@ -100,7 +100,7 @@
     }
   },
   "contact": {
-    "title": "\b",
+    "title": "<br></br>",
     "form": {
       "name": {
         "title": "NAME",

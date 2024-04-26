@@ -8,7 +8,7 @@ const Purpose = () => {
   return (
     <CustomSection
       id="purpose"
-      title={t("title")}
+      title={t.rich("title", { br: () => <br /> })}
       body={<PurposeBody t={t} />}
     />
   );

@@ -7,7 +7,7 @@ const History = () => {
   return (
     <CustomSection
       id="history"
-      title={t("title")}
+      title={t.rich("title", { br: () => <br /> })}
       body={<HistoryBody t={t} />}
     />
   );

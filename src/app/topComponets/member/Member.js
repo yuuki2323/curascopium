@@ -14,7 +14,7 @@ const Member = () => {
   return (
     <CustomSection
       id="member"
-      title={t("title")}
+      title={t.rich("title", { br: () => <br /> })}
       body={
         <NextIntlClientProvider messages={pick(msg, "member")}>
           <MemberBody />

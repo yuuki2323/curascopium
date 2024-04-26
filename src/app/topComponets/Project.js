@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <CustomSection
       id="project"
-      title={t("title")}
+      title={t.rich("title", { br: () => <br /> })}
       body={<ProjectBody t={t} />}
     />
   );

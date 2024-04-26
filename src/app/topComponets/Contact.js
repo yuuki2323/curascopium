@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <CustomSection
       id="contact"
-      title={t("title")}
+      title={t.rich("title", { br: () => <br /> })}
       body={<ContactBody t={t} />}
     />
   );
