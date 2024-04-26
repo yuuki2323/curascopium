@@ -1,12 +1,12 @@
 {
   "header": {
-		"news": "NEWS",
-		"history": "HISTORY",
-		"purpose": "PURPOSE",
-		"member": "MEMBER",
-		"project": "PROJECT",
-		"contact": "CONTACT"
-	},
+    "news": "NEWS",
+    "history": "HISTORY",
+    "purpose": "PURPOSE",
+    "member": "MEMBER",
+    "project": "PROJECT",
+    "contact": "CONTACT"
+  },
   "top": {
     "PC": "Enthralling all<br></br>with the wonders of the universe",
     "Mobile": "Enthralling all<br></br>with the wonders of the universe"
@@ -21,9 +21,72 @@
   },
   "purpose": {
     "title": "\b",
-    "body": "“Making astrophysics accessible to the visually impaired people”<br></br><br></br>We are currently working with various partners in the U.S. and Japan, such as the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create new events that can be enjoyed by both the visually impaired and the sighted."},
+    "body": "“Making astrophysics accessible to the visually impaired people”<br></br><br></br>We are currently working with various partners in the U.S. and Japan, such as the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create new events that can be enjoyed by both the visually impaired and the sighted."
+  },
   "member": {
-    "title": "\b"
+    "title": "\b",
+    "profile": {
+      "tanaka": {
+        "name": "Yusaku<br></br>Tanaka",
+        "en": "\n",
+        "description": "President"
+      },
+      "yamamoto": {
+        "name": "Haru<br></br>Yamamoto",
+        "en": "\n",
+        "description": "Advisor"
+      },
+      "nagasawa": {
+        "name": "Takeshi<br></br>Nagasawa",
+        "en": "\n",
+        "description": "Research Director"
+      },
+      "sanada": {
+        "name": "Saniya<br></br>Sanada",
+        "en": "\n",
+        "description": "Vice President"
+      },
+      "harimoto": {
+        "name": "Hiromitsu<br></br>Harimoto",
+        "en": "\n",
+        "description": "Vice President"
+      },
+      "miyagi": {
+        "name": "Satoshi<br></br>Miyagi",
+        "en": "\n",
+        "description": "HR Director"
+      },
+      "taniguchi": {
+        "name": "Tomoka<br></br>Taniguchi",
+        "en": "\n",
+        "description": "Design Director"
+      },
+      "yamada": {
+        "name": "Gaku<br></br>Yamada",
+        "en": "\n",
+        "description": "Web Developer"
+      },
+      "kurosaka": {
+        "name": "Mio<br></br>Kurosaka",
+        "en": "\n",
+        "description": "Art Director"
+      },
+      "sato": {
+        "name": "Sakuya<br></br>Sato",
+        "en": "\n",
+        "description": "SNS / Music Director"
+      },
+      "matsunaga": {
+        "name": "Taishi<br></br>Matsunaga",
+        "en": "\n",
+        "description": "Finance Director"
+      },
+      "ikeda": {
+        "name": "Yumeka<br></br>Ikeda",
+        "en": "\n",
+        "description": "Researcher"
+      }
+    }
   },
   "project": {
     "title": "\b",
