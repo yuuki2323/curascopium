@@ -1,25 +1,22 @@
-import React from 'react';
-import CustomSection from '../ui/CustomSection';
+import React from "react";
+import CustomSection from "../ui/CustomSection";
+import { useTranslations } from "next-intl";
 
 const History = () => {
+  const t = useTranslations("history");
   return (
     <CustomSection
-      id='history'
-      body={<HistoryBody />}
+      id="history"
+      title={t("title")}
+      body={<HistoryBody t={t} />}
     />
   );
 };
 
-const HistoryBody = () => {
+const HistoryBody = ({ t }) => {
   return (
-    <p className='mx-auto text-white text-sm md:text-xl py-4 md:py-8'>
-      2022年、米国カリフォリニア大学バークレー校にて宇宙物理学専攻、障がい者学副専攻の田中優作により学生団体が創設される。
-      <br />
-      <br />
-      2023年、チームメンバーをカリフォリニア大学バークレー校、マサチューセッツ工科大学、東京大学、筑波大学より募集。
-      <br />
-      <br />
-      現在はアメリカ、日本、ヨーロッパから学年、専攻、国籍を跨いだチーム構成で活動中。
+    <p className="mx-auto text-white text-sm md:text-xl py-4 md:py-8">
+      {t.rich("body", { br: () => <br /> })}
     </p>
   );
 };

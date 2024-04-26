@@ -8,7 +8,7 @@ import { IconContext } from 'react-icons';
 import { Navi, SNS } from '../constants';
 
 const MobileHeader = () => {
-  const navi = Object.values(Navi);
+  const navi = Object.entries(Navi);
   const sns = Object.values(SNS);
 
   // メニューの開閉を定義してます
@@ -69,19 +69,19 @@ const MobileHeader = () => {
         </button>
         {/* 内容 */}
         <div>
-          {/* なび */}
+          {/* Navigation */}
           <nav className=' mt-24 flex flex-col items-center justify-center'>
             <ul className='mb-8'>
               {navi.map((navi) => {
                 return (
                   <li
-                    key={navi.nav}
+                    key={navi[0]}
                     className='mb-4 text-center'>
                     <button onClick={handleMenu}>
                       <Link
-                        href={navi.href}
+                        href={navi[1].href}
                         className='block p-2'>
-                        <p className='text-white text-base'>{navi.nav}</p>
+                        <p className='text-white text-base'>{navi[0]}</p>
                       </Link>
                     </button>
                   </li>
