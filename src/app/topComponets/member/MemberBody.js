@@ -3,12 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-import { MemberProfile } from "../../constants";
+import { members } from "../../constants";
 import { mediaQuery, useMediaQuery } from "../../useMediaQuery";
+import { useTranslations } from "next-intl";
 
 export const MemberBody = () => {
   const isMd = useMediaQuery(mediaQuery.md);
-  const members = Object.entries(MemberProfile);
+  const t = useTranslations("member.profile");
   return (
     <Splide
       options={{
@@ -25,11 +26,11 @@ export const MemberBody = () => {
       {members.map((member) => {
         return (
           <MemberCard
-            key={member[0]}
-            id={member[0]}
-            name={member[1].name}
-            alphabet={member[1].alphabet}
-            description={member[1].description}
+            key={member}
+            id={member}
+            name={t.rich(`${member}.name`, { br: () => <br /> })}
+            en={t(`${member}.en`)}
+            description={t.rich(`${member}.description`, { br: () => <br /> })}
           />
         );
       })}
@@ -37,15 +38,7 @@ export const MemberBody = () => {
   );
 };
 
-const MemberCard = ({ id, name, alphabet, description }) => {
-  const formattedText = description.split("\n").map((item, index) => {
-    return (
-      <React.Fragment key={index}>
-        {item}
-        <br />
-      </React.Fragment>
-    );
-  });
+const MemberCard = ({ id, name, en, description }) => {
   return (
     <SplideSlide>
       <div className="w-[370] h-[480] bg-blue-950 bg-bg bg-contain p-2 md:p-3 md:pt-0 md:px-10 text-center text-white">
@@ -57,10 +50,8 @@ const MemberCard = ({ id, name, alphabet, description }) => {
           className="w-screen h-auto rounded-full mb-2 md:p-4"
         />
         <p className="text-sm md:text-xl mb-1">{name}</p>
-        <p className="text-[10px] md:text-sm mb-2 md:mb-2">{alphabet}</p>
-        <p className="text-[8px] md:text-[12px] h-10 md:h-20">
-          {formattedText}
-        </p>
+        <p className="text-[10px] md:text-sm mb-2 md:mb-2">{en}</p>
+        <p className="text-[8px] md:text-[12px] h-10 md:h-20">{description}</p>
       </div>
     </SplideSlide>
   );
