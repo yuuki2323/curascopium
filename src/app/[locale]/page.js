@@ -3,7 +3,7 @@ import Topphoto from "../topComponets/Topphoto";
 import News from "../topComponets/News";
 import History from "../topComponets/History";
 import Purpose from "../topComponets/Purpose";
-import Member from "../topComponets/member/Member";
+import Member from "../topComponets/Member";
 import Project from "../topComponets/Project";
 import Contact from "../topComponets/Contact";
 import ReturnTopButton from "../topComponets/ReturnTopButton";
