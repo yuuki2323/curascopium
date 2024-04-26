@@ -40,26 +40,14 @@ export const Navi = Object.freeze({
   },
 });
 
-export const SectionInfo = Object.freeze({
-  news: {
-    title: "NEWS",
-  },
-  history: {
-    title: "HISTORY",
-  },
-  purpose: {
-    title: "PURPOSE",
-  },
-  member: {
-    title: "MEMBER",
-  },
-  project: {
-    title: "PROJECT",
-  },
-  contact: {
-    title: "CONTACT",
-  },
-});
+export const SectionInfo = {
+  news: "NEWS",
+  history: "HISTORY",
+  purpose: "PURPOSE",
+  member: "MEMBER",
+  project: "PROJECT",
+  contact: "CONTACT",
+};
 
 export const MemberProfile = Object.freeze({
   tanaka: {
@@ -128,15 +116,4 @@ export const MemberProfile = Object.freeze({
   },
 });
 
-export const ProjectInfo = Object.freeze({
-  education: {
-    title: "視覚障がい者教育",
-    description:
-      "視覚障がいを持つ高校二年生を対象に宇宙講座を行った。目的は、視覚に依存しない方法で天文学の理解を深め、生徒たちと感動を共有し、彼らへ大学進学の可能性を示すこと。",
-  },
-  planetarium: {
-    title: "次世代プラネタリウム",
-    description:
-      "仙台市天文台とのコラボレーション視覚障がいを持つ方々と晴眼者が共に感動できるプラネタリウムを制作中。アドバイザーとして落合陽一氏を迎え、前例のないプラネタリウムに挑戦中。",
-  },
-});
+export const projects = ["education", "planetarium"];
