@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import { Navi, SNS } from "../constants";
+import { SNS, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 const PcHeader = () => {
+  const navi = Object.entries(SectionInfo);
   const sns = Object.values(SNS);
-  const navi = Object.values(Navi);
+
+  const t = useTranslations("header");
 
   return (
     // ヘッダー
@@ -39,9 +42,11 @@ const PcHeader = () => {
           <ul className=" md:flex md:justify-between md:items-center md:gap-6 md:mt-4">
             {navi.map((navi) => {
               return (
-                <li key={navi.nav}>
-                  <Link href={navi.href}>
-                    <p className="text-white  text-sm lg:text-lg">{navi.nav}</p>
+                <li key={navi[0]}>
+                  <Link href={navi[1].href}>
+                    <p className="text-white  text-sm lg:text-lg">
+                      {t(navi[0])}
+                    </p>
                   </Link>
                 </li>
               );

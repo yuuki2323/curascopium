@@ -13,41 +13,32 @@ export const SNS = Object.freeze({
   },
 });
 
-export const Navi = Object.freeze({
+export const SectionInfo = Object.freeze({
   news: {
+    title: "NEWS",
     href: "/news",
-    nav: "お知らせ",
   },
   history: {
+    title: "HISTORY",
     href: "/#history",
-    nav: "チームの歴史",
   },
   purpose: {
+    title: "PURPOSE",
     href: "/#purpose",
-    nav: "活動目的",
   },
   member: {
+    title: "MEMBER",
     href: "/#member",
-    nav: "メンバー紹介",
   },
   project: {
+    title: "PROJECT",
     href: "/#project",
-    nav: "事業内容",
   },
   contact: {
+    title: "CONTACT",
     href: "/#contact",
-    nav: "お問い合わせ",
   },
 });
-
-export const SectionInfo = {
-  news: "NEWS",
-  history: "HISTORY",
-  purpose: "PURPOSE",
-  member: "MEMBER",
-  project: "PROJECT",
-  contact: "CONTACT",
-};
 
 export const MemberProfile = Object.freeze({
   tanaka: {

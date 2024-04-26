@@ -1,12 +1,12 @@
 {
-  "HEADER": {
-    "NEWS": "お知らせ",
-    "HISTORY": "歴史",
-    "PURPOSE": "活動目的",
-    "MEMBER": "メンバー紹介",
-    "PROJECT": "事業内容",
-    "CONTACT": "お問い合わせ"
-  },
+  "header": {
+		"news": "NEWS",
+		"history": "HISTORY",
+		"purpose": "PURPOSE",
+		"member": "MEMBER",
+		"project": "PROJECT",
+		"contact": "CONTACT"
+	},
   "top": {
     "PC": "Enthralling all<br></br>with the wonders of the universe",
     "Mobile": "Enthralling all<br></br>with the wonders of the universe"

@@ -1,11 +1,11 @@
 {
-	"HEADER": {
-		"NEWS": "お知らせ",
-		"HISTORY": "歴史",
-		"PURPOSE": "活動目的",
-		"MEMBER": "メンバー紹介",
-		"PROJECT": "事業内容",
-		"CONTACT": "お問い合わせ"
+	"header": {
+		"news": "お知らせ",
+		"history": "歴史",
+		"purpose": "活動目的",
+		"member": "メンバー紹介",
+		"project": "事業内容",
+		"contact": "お問い合わせ"
 	},
 	"top": {
 		"PC": "視覚障がい者に<br></br>宇宙の素晴らしさを伝え<br></br>感動を共有する",

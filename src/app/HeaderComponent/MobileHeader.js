@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import { Navi, SNS } from "../constants";
+import { SNS, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
 
 const MobileHeader = () => {
-  const navi = Object.entries(Navi);
+  const navi = Object.entries(SectionInfo);
   const sns = Object.values(SNS);
 
   // メニューの開閉を定義してます
@@ -73,7 +73,9 @@ const MobileHeader = () => {
                   <li key={navi[0]} className="mb-4 text-center">
                     <button onClick={handleMenu}>
                       <Link href={navi[1].href} className="block p-2">
-                        <p className="text-white text-base">{navi[0]}</p>
+                        <p className="text-white text-base">
+                          {navi[0].toUpperCase()}
+                        </p>
                       </Link>
                     </button>
                   </li>
