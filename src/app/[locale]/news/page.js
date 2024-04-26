@@ -5,6 +5,8 @@ import Title from "../../ui/Title.js";
 import Header from "../../topComponets/Header.js";
 import Link from "next/link.js";
 
+export const runtime = "edge";
+
 const Home = async () => {
   const { contents } = await getList();
   return (

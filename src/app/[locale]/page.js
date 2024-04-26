@@ -8,6 +8,8 @@ import Project from "../topComponets/Project";
 import Contact from "../topComponets/Contact";
 import ReturnTopButton from "../topComponets/ReturnTopButton";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <main>
