@@ -1,0 +1,59 @@
+{
+  "HEADER": {
+    "NEWS": "お知らせ",
+    "HISTORY": "歴史",
+    "PURPOSE": "活動目的",
+    "MEMBER": "メンバー紹介",
+    "PROJECT": "事業内容",
+    "CONTACT": "お問い合わせ"
+  },
+  "top": {
+    "PC": "Enthralling all<br></br>with the wonders of the universe",
+    "Mobile": "Enthralling all<br></br>with the wonders of the universe"
+  },
+  "news": {
+    "title": "\b",
+    "more": "and more..."
+  },
+  "history": {
+    "title": "\b",
+    "body": "In 2022, Yusaku Tanaka, an astrophysics major at the University of California Berkeley, established Curascopium.<br></br><br></br>In 2023, team members were recruited from the University of California, Berkeley, Massachusetts Institute of Technology, the University of Tokyo, and the University of Tsukuba.<br></br><br></br>Currently, the team is composed of students from the U.S., Japan, and Europe with diverse backgrounds and academic interests."
+  },
+  "purpose": {
+    "title": "\b",
+    "body": "“Making astrophysics accessible to the visually impaired people”<br></br><br></br>We are currently working with various partners in the U.S. and Japan, such as the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create new events that can be enjoyed by both the visually impaired and the sighted."},
+  "member": {
+    "title": "\b"
+  },
+  "project": {
+    "title": "\b",
+    "EDUCATION": {
+      "title": "視覚障がい者教育",
+      "TEXT": "視覚障がいを持つ高校二年生を対象に宇宙講座を行った。目的は、視覚に依存しない方法で天文学の理解を深め、生徒たちと感動を共有し、彼らへ大学進学の可能性を示すこと。"
+    },
+    "PLANETARIUM": {
+      "title": "次世代プラネタリウム",
+      "TEXT": "仙台市天文台とのコラボレーション視覚障がいを持つ方々と晴眼者が共に感動できるプラネタリウムを制作中。アドバイザーとして落合陽一氏を迎え、前例のないプラネタリウムに挑戦中。"
+    }
+  },
+  "contact": {
+    "title": "\b",
+    "FORM": {
+      "NAME": {
+        "title": "お名前",
+        "PLACEHOLDER": "例) 山田 太郎"
+      },
+      "PHONE": {
+        "title": "電話番号",
+        "PLACEHOLDER": "例) 090-1234-5678"
+      },
+      "EMAIL": {
+        "title": "メールアドレス",
+        "PLACEHOLDER": "例) sample@sample.com"
+      },
+      "MESSAGE": {
+        "title": "お問い合わせ内容"
+      }
+    }
+  }
+}
