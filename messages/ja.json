@@ -39,22 +39,23 @@
 	},
 	"contact": {
 		"title": "お問い合わせ",
-		"FORM": {
-			"NAME": {
+		"form": {
+			"name": {
 				"title": "お名前",
-				"PLACEHOLDER": "例) 山田 太郎"
+				"placeholder": "例) 山田 太郎"
 			},
-			"PHONE": {
+			"phone": {
 				"title": "電話番号",
-				"PLACEHOLDER": "例) 090-1234-5678"
+				"placeholder": "例) 090-1234-5678"
 			},
-			"EMAIL": {
+			"email": {
 				"title": "メールアドレス",
-				"PLACEHOLDER": "例) sample@sample.com"
+				"placeholder": "例) sample@sample.com"
 			},
-			"MESSAGE": {
+			"message": {
 				"title": "お問い合わせ内容"
-			}
+			},
+			"submit": "確認画面へ"
 		}
 	}
 }

@@ -38,22 +38,23 @@
   },
   "contact": {
     "title": "\b",
-    "FORM": {
-      "NAME": {
-        "title": "お名前",
-        "PLACEHOLDER": "例) 山田 太郎"
+    "form": {
+      "name": {
+        "title": "NAME",
+        "placeholder": "ex) Taro Yamada"
       },
-      "PHONE": {
-        "title": "電話番号",
-        "PLACEHOLDER": "例) 090-1234-5678"
+      "phone": {
+        "title": "PHONE NUMBER",
+        "placeholder": "ex) (000) 000-0000"
       },
-      "EMAIL": {
-        "title": "メールアドレス",
-        "PLACEHOLDER": "例) sample@sample.com"
+      "email": {
+        "title": "EMAIL ADDRESS",
+        "placeholder": "ex) sample@sample.com"
       },
-      "MESSAGE": {
-        "title": "お問い合わせ内容"
-      }
+      "message": {
+        "title": "MESSAGE"
+      },
+      "submit": "Submit"
     }
   }
 }
