@@ -3,7 +3,7 @@
     "news": "NEWS",
     "history": "HISTORY",
     "purpose": "PURPOSE",
-    "member": "MEMBER",
+    "member": "OUR TEAM",
     "project": "PROJECT",
     "contact": "CONTACT"
   },
@@ -21,7 +21,7 @@
   },
   "purpose": {
     "title": "<br></br>",
-    "body": "“Making astrophysics accessible to the visually impaired people”<br></br><br></br>We are currently working with various partners in the U.S. and Japan, such as the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create new events that can be enjoyed by both the visually impaired and the sighted."
+    "body": "“Making astrophysics accessible to visually impaired people”<br></br><br></br>We are currently partnering with several organizations in the U.S. and Japan, including the University of Tsukuba Special Needs School, the University of Tsukuba, and the Hubble Observatory, to create novel events that can be enjoyed by both visually impaired individuals and those who are not."
   },
   "member": {
     "title": "<br></br>",
@@ -29,7 +29,7 @@
       "tanaka": {
         "name": "Yusaku<br></br>Tanaka",
         "en": "\n",
-        "description": "President"
+        "description": "Founder / President"
       },
       "yamamoto": {
         "name": "Haru<br></br>Yamamoto",
@@ -54,7 +54,7 @@
       "miyagi": {
         "name": "Satoshi<br></br>Miyagi",
         "en": "\n",
-        "description": "HR Director"
+        "description": "Administrative Director"
       },
       "taniguchi": {
         "name": "Tomoka<br></br>Taniguchi",
@@ -74,7 +74,7 @@
       "sato": {
         "name": "Sakuya<br></br>Sato",
         "en": "\n",
-        "description": "SNS / Music Director"
+        "description": "Social Media / Music Director"
       },
       "matsunaga": {
         "name": "Taishi<br></br>Matsunaga",
@@ -91,12 +91,12 @@
   "project": {
     "title": "<br></br>",
     "education": {
-      "title": "Class for visually impaired",
-      "body": "An interactive lecture was held for visually impaired high school students in their second year. The purpose was to deepen their understanding of astronomy in a non-visual way, to share the excitement of astronomy with them, and to suggest college as one of their future options because many visually impaired students tend to work after high school."
+      "title": "Astronomy lecture for visually impaired students",
+      "body": "An interactive lecture was held for visually impaired, second-year students at the University of Tsukuba Special Needs High School. The aim was to deepen their understanding of astronomy in a non-visual way, to share the excitement of scientific investigation, and to stimulate their interest in pursuing higher education."
     },
     "planetarium": {
       "title": "Inclusive planetarium",
-      "body": "In collaboration with Sendai Astronomical Observatory and Yoichi Ochiai as an advisor, we are creating a planetarium that will be a moving experience for both the visually impaired and the sighted."
+      "body": "In collaboration with the Sendai Astronomical Observatory and advisor Dr. Yoichi Ochiai from the University of Tsukuba, we are currently developing a next-generation planetarium that we hope will be a moving experience for all."
     }
   },
   "contact": {
@@ -104,7 +104,7 @@
     "form": {
       "name": {
         "title": "NAME",
-        "placeholder": "ex) Taro Yamada"
+        "placeholder": "ex) Oski Bear"
       },
       "phone": {
         "title": "PHONE NUMBER",
