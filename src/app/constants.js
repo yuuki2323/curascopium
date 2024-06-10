@@ -48,7 +48,7 @@ export const members = [
   "harimoto",
   "miyagi",
   "taniguchi",
-  "yamadaa",
+  "yamada",
   "kurosaka",
   "sato",
   "matsunaga",
