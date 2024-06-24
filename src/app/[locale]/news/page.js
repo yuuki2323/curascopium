@@ -34,12 +34,3 @@ const NewsBody = async () => {
 };
 
 export default Home;
-
-export async function generateStaticParams() {
-  const posts = await getList();
-  console.log(posts);
-
-  return posts.map((post) => ({
-    postId: post.id,
-  }));
-}
