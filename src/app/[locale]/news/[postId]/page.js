@@ -18,7 +18,7 @@ const Home = async ({ params: { postId } }) => {
           <h2 className="mb-4 md:mb-12 text-2xl md:text-4xl text-center">
             {post.title}
           </h2>
-          <div dangerouslySetInnerHTML={{ __html: html }}></div>
+          {html && <div dangerouslySetInnerHTML={{ __html: html }}></div>}
         </div>
       </section>
     </main>
