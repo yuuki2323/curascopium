@@ -1,5 +1,4 @@
 "use client";
-// @ts-expect-error TS(7016): Could not find a declaration file for module 'reac... Remove this comment to see the full error message
 import { useEffect, useState } from "react";
 
 export const mediaQuery = {

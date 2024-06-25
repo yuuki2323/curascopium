@@ -9,8 +9,6 @@ const Home = async ({ params: { postId } }: any) => {
   const html = post.content;
   return (
     <main className="mx-8">
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is
-      provided... Remove this comment to see the full error message
       <Header />
       <section className="container mx-auto mt-24 md:mt-36 text-sm md:text-lg text-white">
         <div>
