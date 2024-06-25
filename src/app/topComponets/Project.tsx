@@ -15,7 +15,7 @@ const Project = () => {
   );
 };
 
-const ProjectBody = ({ t }) => {
+const ProjectBody = ({ t }: any) => {
   return (
     <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg">
       {projects.map((project) => {
@@ -32,7 +32,7 @@ const ProjectBody = ({ t }) => {
   );
 };
 
-const ProjectCard = ({ id, title, description }) => {
+const ProjectCard = ({ id, title, description }: any) => {
   return (
     <div className="md:w-2/3">
       <div className="relative">
@@ -47,6 +47,7 @@ const ProjectCard = ({ id, title, description }) => {
           {title}
         </p>
       </div>
+
       <p>{description}</p>
     </div>
   );

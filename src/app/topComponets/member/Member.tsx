@@ -6,7 +6,7 @@ import {
   useMessages,
   useTranslations,
 } from "next-intl";
-import { MemberBody } from "./MemberBody";
+import MemberBody from "./MemberBody";
 
 const Member = () => {
   const t = useTranslations("member");

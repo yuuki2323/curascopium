@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  font-family: var(--font-marcellus), var(--font-noto-serif-jp), sans-serif;
+}

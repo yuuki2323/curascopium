@@ -21,6 +21,7 @@ const MobileHeader = () => {
   };
   return (
     // ヘッダー
+
     <header className="md:hidden z-30">
       {/* アイコン */}
       <h1>
@@ -40,7 +41,6 @@ const MobileHeader = () => {
           <FaBars />
         </IconContext.Provider>
       </button>
-
       {/* 開いた時の画面 */}
       <div
         className={
@@ -63,6 +63,7 @@ const MobileHeader = () => {
         {/* 閉じるボタン */}
         <button className={`fixed top-4 right-8 `} onClick={handleMenu}>
           <IconContext.Provider value={{ color: "white", size: "44px" }}>
+            message
             <FaXmark />
           </IconContext.Provider>
         </button>
@@ -71,7 +72,7 @@ const MobileHeader = () => {
           {/* Navigation */}
           <nav className=" mt-24 flex flex-col items-center justify-center">
             <ul className="mb-8">
-              {navi.map((navi) => {
+              {navi.map((navi: any) => {
                 return (
                   <li key={navi[0]} className="mb-4 text-center">
                     <button onClick={handleMenu}>
@@ -85,7 +86,7 @@ const MobileHeader = () => {
             </ul>
             {/* SNS */}
             <ul className="flex items-center gap-8">
-              {sns.map((sns) => {
+              {sns.map((sns: any) => {
                 return (
                   <li key={sns.href}>
                     <Link

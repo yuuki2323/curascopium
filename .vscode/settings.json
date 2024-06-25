@@ -4,4 +4,7 @@
 	],
 	"i18n-ally.keystyle": "nested",
 	"json.format.enable": true,
+	"files.associations": {
+    	"*.css": "tailwindcss",
+  	},
 }

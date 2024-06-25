@@ -1,7 +1,7 @@
-'use client';
-import { useEffect, useState } from 'react';
-import { AiOutlineUp } from 'react-icons/ai';
-import { IconContext } from 'react-icons';
+"use client";
+import { useEffect, useState } from "react";
+import { AiOutlineUp } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 // 上に戻るためのボタン
 const ReturnTopButton = () => {
@@ -10,14 +10,14 @@ const ReturnTopButton = () => {
   const returnTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollWindow);
+    window.addEventListener("scroll", scrollWindow);
     return () => {
-      window.removeEventListener('scroll', scrollWindow);
+      window.removeEventListener("scroll", scrollWindow);
     };
   }, []);
 
@@ -34,22 +34,22 @@ const ReturnTopButton = () => {
 
   const normalStyle = {
     opacity: 0,
-    transition: '0.5s',
-    pointerEvents: 'none',
+    transition: "0.5s",
+    pointerEvents: "none",
   };
   const activeStyle = {
     opacity: 1,
-    transition: '0.5s',
+    transition: "0.5s",
   };
   const style = isButtonActive ? activeStyle : normalStyle;
 
   return (
     <button
       onClick={returnTop}
-      className=' bottom-6 right-6 fixed bg-bg-black rounded-full p-1 '
+      className=" bottom-6 right-6 fixed bg-bg-black rounded-full p-1 "
       style={style}>
-      <IconContext.Provider value={{ color: 'white', size: '32px' }}>
-        <AiOutlineUp className='' />
+      <IconContext.Provider value={{ color: "white", size: "32px" }}>
+        <AiOutlineUp className="" />
       </IconContext.Provider>
     </button>
   );

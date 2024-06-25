@@ -1,9 +1,9 @@
 import React from "react";
 import { format } from "date-fns";
-import Title from "../../ui/Title.js";
-import Header from "../../topComponets/Header.js";
+import Title from "../../ui/Title";
+import Header from "../../topComponets/Header";
 import { Link } from "@/navigation";
-import { getList } from "../../../../libs/client.js";
+import { getList } from "../../../../libs/client";
 
 export const runtime = "edge";
 
@@ -21,7 +21,7 @@ const Home = () => {
 
 const NewsBody = async () => {
   const { contents } = await getList({ limit: 5 });
-  return contents.map((post) => (
+  return contents.map((post: any) => (
     <dl
       className="text-white border-b border-white flex gap-2 md:gap-8 py-2 mb-2 tabular-nums"
       key={post.id}>

@@ -14,7 +14,7 @@ const Purpose = () => {
   );
 };
 
-const PurposeBody = ({ t }) => {
+const PurposeBody = ({ t }: any) => {
   return (
     <>
       <Image src="/galaxy.jpg" alt="photo" width={1800} height={600} />

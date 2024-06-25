@@ -7,7 +7,14 @@ import { members } from "../../constants";
 import { mediaQuery, useMediaQuery } from "../../useMediaQuery";
 import { useTranslations } from "next-intl";
 
-export const MemberBody = () => {
+interface MemberCardProps {
+  id: string;
+  name: any;
+  en: string;
+  description: any;
+}
+
+const MemberBody = (): React.JSX.Element => {
   const isMd = useMediaQuery(mediaQuery.md);
   const t = useTranslations("member.profile");
   return (
@@ -38,7 +45,12 @@ export const MemberBody = () => {
   );
 };
 
-const MemberCard = ({ id, name, en, description }) => {
+const MemberCard = ({
+  id,
+  name,
+  en,
+  description,
+}: MemberCardProps): React.JSX.Element => {
   return (
     <SplideSlide>
       <div className="w-[370] h-[480] bg-blue-950 bg-bg bg-contain p-2 md:p-3 md:pt-0 md:px-10 text-center text-white">
@@ -56,3 +68,5 @@ const MemberCard = ({ id, name, en, description }) => {
     </SplideSlide>
   );
 };
+
+export default MemberBody;

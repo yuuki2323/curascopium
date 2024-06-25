@@ -13,7 +13,7 @@ const History = () => {
   );
 };
 
-const HistoryBody = ({ t }) => {
+const HistoryBody = ({ t }: any) => {
   return (
     <p className="mx-auto text-white text-sm md:text-xl py-4 md:py-8">
       {t.rich("body", { br: () => <br /> })}
