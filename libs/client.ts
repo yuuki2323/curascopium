@@ -6,11 +6,15 @@ import {
   createClient,
 } from "microcms-js-sdk";
 
-interface MicroCMSPost {
+export interface MicroCMSPost extends MicroCMSListContent {
   title: string;
   content: string;
-  category: string;
-  photo: MicroCMSImage;
+  category: MicroCMSCategory | null;
+  photo?: MicroCMSImage;
+}
+
+interface MicroCMSCategory extends MicroCMSListContent {
+  name: string;
 }
 
 export const client = createClient({
