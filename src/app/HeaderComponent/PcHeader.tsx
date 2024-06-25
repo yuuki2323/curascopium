@@ -11,7 +11,6 @@ const PcHeader = () => {
   const t = useTranslations("header");
 
   return (
-    // ヘッダー
     <header
       className="hidden md:flex md:p-4 lg:py-6
     justify-between container mx-auto absolute top-0 right-0 left-0 z-10 ">
@@ -21,17 +20,17 @@ const PcHeader = () => {
           <Image src="/logo.png" alt="photo" width={88} height={88} />
         </Link>
       </h1>
-
       <div className="ml-auto">
         {/* sns */}
         <div className="flex items-center justify-end gap-4">
-          {sns.map((sns) => {
+          {sns.map((sns: any) => {
             return (
               <Link
                 href={sns.href}
                 key={sns.href}
                 target="_blank"
                 rel="noopener noreferrer">
+                message
                 <Image src={sns.src} width={36} height={36} alt="sns" />
               </Link>
             );
@@ -40,7 +39,7 @@ const PcHeader = () => {
         {/* ナビ */}
         <nav className="hidden md:block">
           <ul className=" md:flex md:justify-between md:items-center md:gap-6 md:mt-4">
-            {navi.map((navi) => {
+            {navi.map((navi: any) => {
               return (
                 <li key={navi[0]}>
                   <Link href={navi[1].href}>

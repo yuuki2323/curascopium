@@ -7,6 +7,7 @@ const Topphoto = () => {
   return (
     <section className=" relative -z-50">
       {/* スマホ用 */}
+
       <Image
         src="/top/mobile.jpg"
         alt="topimage"
@@ -18,6 +19,7 @@ const Topphoto = () => {
         {t.rich("Mobile", { br: () => <br /> })}
       </p>
       {/* PC用 */}
+
       <Image
         src="/top/pc.jpg"
         alt="topimage"

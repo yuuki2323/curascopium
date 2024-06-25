@@ -9,11 +9,7 @@ const Header = () => {
   return (
     <>
       <PcHeader />
-      <NextIntlClientProvider
-        messages={
-          // … and provide the relevant messages
-          pick(messages, "header")
-        }>
+      <NextIntlClientProvider messages={pick(messages, "header")}>
         <MobileHeader />
       </NextIntlClientProvider>
     </>
