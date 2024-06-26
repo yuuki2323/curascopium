@@ -1,13 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { SNS, SectionInfo } from "../constants";
+import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
 const PcHeader = () => {
-  const navi = Object.entries(SectionInfo);
-  const sns = Object.values(SNS);
-
   const t = useTranslations("header");
 
   return (
@@ -23,14 +20,13 @@ const PcHeader = () => {
       <div className="ml-auto">
         {/* sns */}
         <div className="flex items-center justify-end gap-4">
-          {sns.map((sns: any) => {
+          {SNSInfo.map((sns) => {
             return (
               <Link
                 href={sns.href}
                 key={sns.href}
                 target="_blank"
                 rel="noopener noreferrer">
-                message
                 <Image src={sns.src} width={36} height={36} alt="sns" />
               </Link>
             );
@@ -39,12 +35,12 @@ const PcHeader = () => {
         {/* ナビ */}
         <nav className="hidden md:block">
           <ul className=" md:flex md:justify-between md:items-center md:gap-6 md:mt-4">
-            {navi.map((navi: any) => {
+            {SectionInfo.map((navi) => {
               return (
-                <li key={navi[0]}>
-                  <Link href={navi[1].href}>
+                <li key={navi.title}>
+                  <Link href={navi.href}>
                     <p className="text-white  text-sm lg:text-lg">
-                      {t(navi[0])}
+                      {t(navi.title)}
                     </p>
                   </Link>
                 </li>

@@ -1,19 +1,21 @@
 import React from "react";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
+import { Section } from "../constants";
+import { tProps } from "@/middleware";
 
 const Contact = () => {
   const t = useTranslations("contact");
   return (
     <CustomSection
-      id="contact"
-      title={t.rich("title", { br: () => <br /> })}
+      id={Section.contact}
+      title={t.rich("title", { br: () => <br /> }) as React.ReactElement}
       body={<ContactBody t={t} />}
     />
   );
 };
 
-const ContactBody = ({ t }: any) => {
+const ContactBody = ({ t }: tProps) => {
   return (
     <div className="text-white text-sm md:text-lg">
       <form
@@ -93,6 +95,7 @@ const ContactBody = ({ t }: any) => {
             <a
               href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/d7efceec813650&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer"
               target="_blank"
+              rel="noreferrer"
               id="powered">
               Powered by FormMailer.
             </a>

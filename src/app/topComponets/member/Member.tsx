@@ -7,14 +7,15 @@ import {
   useTranslations,
 } from "next-intl";
 import MemberBody from "./MemberBody";
+import { Section } from "@/app/constants";
 
 const Member = () => {
   const t = useTranslations("member");
   const msg = useMessages();
   return (
     <CustomSection
-      id="member"
-      title={t.rich("title", { br: () => <br /> })}
+      id={Section.member}
+      title={t.rich("title", { br: () => <br /> }) as React.ReactElement}
       body={
         <NextIntlClientProvider messages={pick(msg, "member")}>
           <MemberBody />

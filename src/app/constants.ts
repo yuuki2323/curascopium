@@ -1,44 +1,73 @@
-export const SNS = Object.freeze({
-  x: {
+export const enum SNS {
+  x,
+  instagram,
+  linkedin,
+}
+
+interface SNSInfoProps {
+  title: string;
+  href: string;
+  src: string;
+}
+
+export const SNSInfo: SNSInfoProps[] = [
+  {
+    title: "x",
     href: "https://x.com/curascopium?s=11&t=bab-OhquEEWjR_k74r_d3w",
     src: "/sns/x.png",
   },
-  instagram: {
+  {
+    title: "instagram",
     href: "https://www.instagram.com/curascopium?igsh=MzRlODBiNWFlZA==",
     src: "/sns/Instagram.png",
   },
-  linkedin: {
+  {
+    title: "linkedin",
     href: "https://www.linkedin.com/company/curascopium138/",
     src: "/sns/LinkedIn.png",
   },
-});
+];
 
-export const SectionInfo = Object.freeze({
-  news: {
-    title: "NEWS",
+export const enum Section {
+  news,
+  history,
+  purpose,
+  member,
+  project,
+  contact,
+}
+
+interface SectionInfoProps {
+  title: string;
+  href: string;
+}
+
+export const SectionInfo: SectionInfoProps[] = [
+  {
+    title: "news",
     href: "/news",
   },
-  history: {
-    title: "HISTORY",
+  {
+    title: "history",
     href: "/#history",
   },
-  purpose: {
-    title: "PURPOSE",
+  {
+    title: "purpose",
     href: "/#purpose",
   },
-  member: {
-    title: "MEMBER",
+  {
+    title: "member",
     href: "/#member",
   },
-  project: {
-    title: "PROJECT",
+  {
+    title: "project",
     href: "/#project",
   },
-  contact: {
-    title: "CONTACT",
+  {
+    title: "contact",
     href: "/#contact",
   },
-});
+];
 
 export const members = [
   "tanaka",

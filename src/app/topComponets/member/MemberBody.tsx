@@ -9,9 +9,9 @@ import { useTranslations } from "next-intl";
 
 interface MemberCardProps {
   id: string;
-  name: any;
+  name: React.ReactElement;
   en: string;
-  description: any;
+  description: React.ReactElement;
 }
 
 const MemberBody = (): React.JSX.Element => {
@@ -35,9 +35,17 @@ const MemberBody = (): React.JSX.Element => {
           <MemberCard
             key={member}
             id={member}
-            name={t.rich(`${member}.name`, { br: () => <br /> })}
+            name={
+              t.rich(`${member}.name`, {
+                br: () => <br />,
+              }) as React.ReactElement
+            }
             en={t(`${member}.en`)}
-            description={t.rich(`${member}.description`, { br: () => <br /> })}
+            description={
+              t.rich(`${member}.description`, {
+                br: () => <br />,
+              }) as React.ReactElement
+            }
           />
         );
       })}

@@ -6,7 +6,7 @@ export const mediaQuery = {
   lg: "768px <= width",
 };
 
-export const useMediaQuery = (query: any) => {
+export const useMediaQuery = (query: string) => {
   const formattedQuery = `(${query})`;
   const [match, setMatch] = useState(false);
 

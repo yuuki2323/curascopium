@@ -4,14 +4,11 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import { SNS, SectionInfo } from "../constants";
+import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
 const MobileHeader = () => {
-  const navi = Object.entries(SectionInfo);
-  const sns = Object.values(SNS);
-
   const t = useTranslations("header");
 
   // メニューの開閉を定義してます
@@ -72,12 +69,12 @@ const MobileHeader = () => {
           {/* Navigation */}
           <nav className=" mt-24 flex flex-col items-center justify-center">
             <ul className="mb-8">
-              {navi.map((navi: any) => {
+              {SectionInfo.map((navi) => {
                 return (
-                  <li key={navi[0]} className="mb-4 text-center">
+                  <li key={navi.title} className="mb-4 text-center">
                     <button onClick={handleMenu}>
-                      <Link href={navi[1].href} className="block p-2">
-                        <p className="text-white text-base">{t(navi[0])}</p>
+                      <Link href={navi.href} className="block p-2">
+                        <p className="text-white text-base">{t(navi.title)}</p>
                       </Link>
                     </button>
                   </li>
@@ -86,9 +83,9 @@ const MobileHeader = () => {
             </ul>
             {/* SNS */}
             <ul className="flex items-center gap-8">
-              {sns.map((sns: any) => {
+              {SNSInfo.map((sns) => {
                 return (
-                  <li key={sns.href}>
+                  <li key={sns.title}>
                     <Link
                       href={sns.href}
                       target="_blank"

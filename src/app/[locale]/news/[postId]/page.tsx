@@ -4,7 +4,11 @@ import Header from "../../../topComponets/Header";
 import { getDetail } from "../../../../../libs/client";
 import { format } from "date-fns";
 
-const Home = async ({ params: { postId } }: any) => {
+interface PostIdProps {
+  params: { postId: string };
+}
+
+const Home = async ({ params: { postId } }: PostIdProps) => {
   const post = await getDetail(postId);
   const html = post.content;
   return (

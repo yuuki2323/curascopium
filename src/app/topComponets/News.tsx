@@ -3,23 +3,23 @@ import { getList } from "../../../libs/client";
 import { format } from "date-fns";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
+import { Section } from "../constants";
+import { tProps } from "@/middleware";
 
 const News = () => {
   const t = useTranslations("news");
   return (
     <CustomSection
-      id="news"
-      title={t.rich("title", { br: () => <br /> })}
-      body={<NewsBody />}
+      id={Section.news}
+      title={t.rich("title", { br: () => <br /> }) as React.ReactElement}
+      body={<NewsBody t={t} />}
     />
   );
 };
 
-const NewsBody = async () => {
+const NewsBody = async ({ t }: tProps) => {
   const { contents } = await getList({ limit: 5 });
-  const t = await getTranslations("news");
   return (
     <div className="text-xs md:text-xl">
       {contents.map((post) => (

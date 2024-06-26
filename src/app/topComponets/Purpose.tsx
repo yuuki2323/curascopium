@@ -2,19 +2,21 @@ import Image from "next/image";
 import React from "react";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
+import { Section } from "../constants";
+import { tProps } from "@/middleware";
 
 const Purpose = () => {
   const t = useTranslations("purpose");
   return (
     <CustomSection
-      id="purpose"
-      title={t.rich("title", { br: () => <br /> })}
+      id={Section.purpose}
+      title={t.rich("title", { br: () => <br /> }) as React.ReactElement}
       body={<PurposeBody t={t} />}
     />
   );
 };
 
-const PurposeBody = ({ t }: any) => {
+const PurposeBody = ({ t }: tProps) => {
   return (
     <>
       <Image src="/galaxy.jpg" alt="photo" width={1800} height={600} />

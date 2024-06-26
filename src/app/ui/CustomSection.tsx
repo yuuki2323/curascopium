@@ -1,19 +1,19 @@
 import React from "react";
 import Title from "./Title";
-import { SectionInfo } from "../constants";
+import { Section, SectionInfo } from "../constants";
 
 interface CustomSectionProps {
-  id: string;
-  title: any;
-  body: React.ReactNode;
+  id: Section;
+  title: React.ReactElement;
+  body: React.ReactElement;
 }
 
 const CustomSection = ({ id, title, body }: CustomSectionProps) => {
-  const sectionInfo = SectionInfo[id as keyof typeof SectionInfo];
+  const sectionInfo = SectionInfo[id];
   return (
     <section
       className="container p-4 mx-auto my-12 md:my-0 md:h-screen flex items-center justify-center"
-      id={id}>
+      id={sectionInfo.title}>
       <div className="w-full">
         <Title en={sectionInfo.title} ja={title} />
         {body}
