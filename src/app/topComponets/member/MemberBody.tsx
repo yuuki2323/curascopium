@@ -80,14 +80,16 @@ const MemberCard = ({
         {locale === "ja" ? (
           <></>
         ) : (
-          <Link href={portfolioURL} target="_blank" rel="noreferrer">
-            <Image
-              src={SNSInfo[SNS.linkedin].src}
-              width={36}
-              height={36}
-              alt="sns"
-            />
-          </Link>
+          portfolioURL && (
+            <Link href={portfolioURL} target="_blank" rel="noreferrer">
+              <Image
+                src={SNSInfo[SNS.linkedin].src}
+                width={36}
+                height={36}
+                alt="sns"
+              />
+            </Link>
+          )
         )}
       </div>
     </SplideSlide>
