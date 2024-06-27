@@ -15,7 +15,7 @@ const CustomSection = ({ id, title, body }: CustomSectionProps) => {
       className="container p-4 mx-auto my-12 md:my-0 md:h-screen flex items-center justify-center"
       id={sectionInfo.title}>
       <div className="w-full">
-        <Title en={sectionInfo.title} ja={title} />
+        <Title title={sectionInfo.title} subtitle={title} />
         {body}
       </div>
     </section>
