@@ -90,7 +90,7 @@ const MobileHeader = () => {
                     <Link
                       href={sns.href}
                       target="_blank"
-                      rel="noopener noreferrer">
+                      rel="noreferrer">
                       <Image src={sns.src} width={36} height={36} alt="sns" />
                     </Link>
                   </li>
