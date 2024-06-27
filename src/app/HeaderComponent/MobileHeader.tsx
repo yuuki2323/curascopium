@@ -7,6 +7,7 @@ import { IconContext } from "react-icons";
 import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 const MobileHeader = () => {
   const t = useTranslations("header");
@@ -95,6 +96,9 @@ const MobileHeader = () => {
                   </li>
                 );
               })}
+            </ul>
+            <ul className="mt-8">
+              <LocaleSwitcher />
             </ul>
           </nav>
         </div>

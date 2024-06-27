@@ -3,6 +3,7 @@ import React from "react";
 import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 const PcHeader = () => {
   const t = useTranslations("header");
@@ -31,6 +32,7 @@ const PcHeader = () => {
               </Link>
             );
           })}
+          <LocaleSwitcher />
         </div>
         {/* ナビ */}
         <nav className="hidden md:block">
