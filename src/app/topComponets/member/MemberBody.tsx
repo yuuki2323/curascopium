@@ -40,7 +40,7 @@ const MemberBody = (): React.JSX.Element => {
                 br: () => <br />,
               }) as React.ReactElement
             }
-            en={t(`${member}.en`)}
+            en={t(`${member}.subtitle`)}
             description={
               t.rich(`${member}.description`, {
                 br: () => <br />,

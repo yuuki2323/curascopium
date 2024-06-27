@@ -28,62 +28,62 @@
     "profile": {
       "tanaka": {
         "name": "田中 優作",
-        "en": "Yusaku Tanaka",
+        "subtitle": "Yusaku Tanaka",
         "description": "UC バークレー<br></br>[宇宙物理学 / 障がい者学]"
       },
       "yamamoto": {
         "name": "山本 暖",
-        "en": "Haru Yamamoto",
+        "subtitle": "Haru Yamamoto",
         "description": "UC バークレー卒<br></br>[分子細胞生物学 / データサイエンス]<br></br>イェール大学 医学大学院<br></br>[MD-PhD 神経科学]"
       },
       "nagasawa": {
         "name": "長澤 赳志",
-        "en": "Takeshi Nagasawa",
+        "subtitle": "Takeshi Nagasawa",
         "description": "UC バークレー卒<br></br>[宇宙物理学]"
       },
       "sanada": {
         "name": "眞田 聖光",
-        "en": "Saniya Sanada",
+        "subtitle": "Saniya Sanada",
         "description": "東京大学 大学院卒<br></br>[惑星科学]<br></br>UT サンアントニオ 大学院<br></br>[PhD 惑星科学]"
       },
       "harimoto": {
         "name": "張本 宏光",
-        "en": "Hiromitsu Harimoto",
+        "subtitle": "Hiromitsu Harimoto",
         "description": "UC バークレー卒<br></br>[生化学 / データサイエンス]<br></br>東京大学医科学研究所 研究員"
       },
       "miyagi": {
         "name": "宮城 理",
-        "en": "Satoshi Miyagi",
+        "subtitle": "Satoshi Miyagi",
         "description": "早稲田大学卒<br></br>[国際教養学]"
       },
       "taniguchi": {
         "name": "谷口 知佳",
-        "en": "Tomoka Taniguchi",
+        "subtitle": "Tomoka Taniguchi",
         "description": "上智大学卒<br></br>[政治学 / 社会科学]<br></br>UC バークレー 大学院<br></br>[MLA ランドスケープアーキテクチャ]"
       },
       "yamada": {
         "name": "山田 楽",
-        "en": "Gaku Yamada",
+        "subtitle": "Gaku Yamada",
         "description": "UC バークレー<br></br>[コンピューターサイエンス]"
       },
       "kurosaka": {
         "name": "黒坂 美桜",
-        "en": "Mio Kurosaka",
+        "subtitle": "Mio Kurosaka",
         "description": "UC バークレー<br></br>[芸術実践]"
       },
       "sato": {
         "name": "佐藤 さくや",
-        "en": "Sakuya Sato",
+        "subtitle": "Sakuya Sato",
         "description": "UC バークレー<br></br>[社会環境学 / コンピューティングミュージック]"
       },
       "matsunaga": {
         "name": "松永 大志",
-        "en": "Taishi Matsunaga",
+        "subtitle": "Taishi Matsunaga",
         "description": "UC バークレー<br></br>[政治経済学 / データサイエンス]"
       },
       "ikeda": {
         "name": "池田 夢叶",
-        "en": "Yumeka Ikeda",
+        "subtitle": "Yumeka Ikeda",
         "description": "オレンジコーストカレッジ<br></br>[宇宙物理学]"
       }
     }
