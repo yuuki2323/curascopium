@@ -69,19 +69,75 @@ export const SectionInfo: SectionInfoProps[] = [
   },
 ];
 
-export const members = [
-  "tanaka",
-  "yamamoto",
-  "nagasawa",
-  "sanada",
-  "harimoto",
-  "miyagi",
-  "taniguchi",
-  "yamada",
-  "kurosaka",
-  "sato",
-  "matsunaga",
-  "ikeda",
+export const enum Member {
+  tanaka,
+  yamamoto,
+  nagasawa,
+  sanada,
+  harimoto,
+  miyagi,
+  taniguchi,
+  yamada,
+  kurosaka,
+  sato,
+  matsunaga,
+  ikeda,
+}
+
+interface MemberInfoProps {
+  id: string;
+  portfolioURL: string;
+}
+
+export const members: MemberInfoProps[] = [
+  {
+    id: "tanaka",
+    portfolioURL: "https://www.linkedin.com/in/yusaku-tanaka/",
+  },
+  {
+    id: "yamamoto",
+    portfolioURL: "https://www.linkedin.com/in/haruyamamoto/",
+  },
+  {
+    id: "nagasawa",
+    portfolioURL: "https://www.linkedin.com/in/takeshi-nagasawa-59487a1b2/",
+  },
+  {
+    id: "sanada",
+    portfolioURL: "https://www.linkedin.com/in/saniya-sanada-860a41280/",
+  },
+  {
+    id: "harimoto",
+    portfolioURL: "https://www.linkedin.com/in/hiro-harimoto",
+  },
+  {
+    id: "miyagi",
+    portfolioURL: "",
+  },
+  {
+    id: "taniguchi",
+    portfolioURL: "https://www.linkedin.com/in/tomoka-taniguchi/",
+  },
+  {
+    id: "yamada",
+    portfolioURL: "https://www.linkedin.com/in/gaku-yamada/",
+  },
+  {
+    id: "kurosaka",
+    portfolioURL: "https://miokwebsite.webnode.jp",
+  },
+  {
+    id: "sato",
+    portfolioURL: "https://www.linkedin.com/in/sakuya-sato-198395294",
+  },
+  {
+    id: "matsunaga",
+    portfolioURL: "https://www.linkedin.com/in/taishipatrickmatsunaga/",
+  },
+  {
+    id: "ikeda",
+    portfolioURL: "https://www.linkedin.com/in/yumeka-ikeda-59bb8b304",
+  },
 ];
 
 export const projects = ["education", "planetarium"];
