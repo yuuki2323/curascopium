@@ -22,10 +22,8 @@ export const client = createClient({
   apiKey: process.env.MICROCMS_API_KEY as string,
 });
 
-export const getList = async (
-  queries?: MicroCMSQueries
-): Promise<MicroCMSListResponse<MicroCMSPost>> => {
-  const listData = await client.getList({
+export const getList = async (queries?: MicroCMSQueries) => {
+  const listData: MicroCMSListResponse<MicroCMSPost> = await client.getList({
     endpoint: "news",
     queries,
   });
@@ -33,7 +31,7 @@ export const getList = async (
 };
 
 export const getDetail = async (postId: string, queries?: MicroCMSQueries) => {
-  const detailData = await client.getListDetail({
+  const detailData: MicroCMSPost = await client.getListDetail({
     endpoint: "news",
     contentId: postId,
     queries,

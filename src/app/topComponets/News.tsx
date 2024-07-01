@@ -1,5 +1,5 @@
 import React from "react";
-import { getList } from "../../../libs/client";
+import { getList } from "../../libs/client";
 import { format } from "date-fns";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";

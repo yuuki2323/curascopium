@@ -1,16 +1,18 @@
-export const runtime = "edge";
 import React from "react";
 import Header from "../../../topComponets/Header";
-import { getDetail } from "../../../../../libs/client";
+import { getDetail } from "../../../../libs/client";
 import { format } from "date-fns";
+
+export const runtime = "edge";
 
 interface PostIdProps {
   params: { postId: string };
 }
 
+
+
 const Home = async ({ params: { postId } }: PostIdProps) => {
   const post = await getDetail(postId);
-  const html = post.content;
   return (
     <main className="mx-8">
       <Header />
@@ -24,7 +26,9 @@ const Home = async ({ params: { postId } }: PostIdProps) => {
             {post.title}
           </h2>
 
-          {html && <div dangerouslySetInnerHTML={{ __html: html }}></div>}
+          {post.content && (
+            <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+          )}
         </div>
       </section>
     </main>
