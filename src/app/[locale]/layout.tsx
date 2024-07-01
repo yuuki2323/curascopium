@@ -1,18 +1,18 @@
-import { Noto_Serif_JP, Marcellus } from "next/font/google";
+import { Noto_Serif_JP, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import { Locale } from "@/navigation";
 
 // フォント
 const notoSerifJP = Noto_Serif_JP({
-  weight: ["400"],
+  weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
   variable: "--font-noto-serif-jp",
 });
 
-const marcellus = Marcellus({
-  weight: ["400"],
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-marcellus",
+  variable: "--font-playfair",
 });
 
 // メタデータ
@@ -34,7 +34,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <body
-        className={`bg-bg-black bg-bg bg-contain ${marcellus.variable} ${notoSerifJP.variable}`}>
+        className={`bg-bg-black bg-bg bg-contain ${playfairDisplay.variable} ${notoSerifJP.variable}`}>
         {children}
       </body>
     </html>
