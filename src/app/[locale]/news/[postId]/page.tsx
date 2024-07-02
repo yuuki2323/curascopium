@@ -30,7 +30,7 @@ const Home = async ({ params: { postId } }: PostIdProps) => {
           {post.photo && (
             <div className="mb-4 md:mb-10">
               <Image
-                src={post.photo.url}
+                src={post.photo.url + "?h=1800"}
                 alt={post.title}
                 width={1800}
                 height={100}
