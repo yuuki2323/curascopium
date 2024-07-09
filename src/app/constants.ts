@@ -124,7 +124,7 @@ export const members: MemberInfoProps[] = [
   },
   {
     id: "kurosaka",
-    portfolioURL: "https://miokwebsite.webnode.jp",
+    portfolioURL: "",
   },
   {
     id: "sato",
