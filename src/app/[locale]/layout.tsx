@@ -1,6 +1,7 @@
 import { Noto_Serif_JP, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import { Locale } from "@/navigation";
+import { Metadata } from "next";
 
 // フォント
 const notoSerifJP = Noto_Serif_JP({
@@ -16,7 +17,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 // メタデータ
-export const metadata = {
+export const metadata: Metadata = {
   title: "Curascopium",
   description:
     "「視覚障がい者へ宇宙の素晴らしさを伝えて、感動を共有する」をモットーに活動している非営利団体です。",
