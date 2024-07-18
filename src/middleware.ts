@@ -13,27 +13,6 @@ export default createMiddleware({
   locales,
 });
 
-export interface tProps {
-  t: {
-    <TargetKey>(
-      key: TargetKey,
-      values?: TranslationValues,
-      formats?: Partial<Formats>
-    ): string;
-    rich<TargetKey>(
-      key: TargetKey,
-      values?: RichTranslationValues,
-      formats?: Partial<Formats>
-    ): string | React.ReactElement | React.ReactNodeArray;
-    markup<TargetKey>(
-      key: TargetKey,
-      values?: MarkupTranslationValues,
-      formats?: Partial<Formats>
-    ): string;
-    raw<TargetKey>(key: TargetKey): string;
-  };
-}
-
 export const config = {
   // Match only internationalized pathnames
   matcher: ["/", "/(en|ja)/:path*"],

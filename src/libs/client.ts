@@ -1,3 +1,4 @@
+import { Locale } from "@/navigation";
 import {
   MicroCMSImage,
   MicroCMSListContent,
@@ -22,17 +23,21 @@ export const client = createClient({
   apiKey: process.env.MICROCMS_API_KEY as string,
 });
 
-export const getList = async (queries?: MicroCMSQueries) => {
+export const getList = async (locale: Locale, queries?: MicroCMSQueries) => {
   const listData: MicroCMSListResponse<MicroCMSPost> = await client.getList({
-    endpoint: "news-ja",
+    endpoint: `news-${locale}`,
     queries,
   });
   return listData;
 };
 
-export const getDetail = async (postId: string, queries?: MicroCMSQueries) => {
+export const getDetail = async (
+  locale: Locale,
+  postId: string,
+  queries?: MicroCMSQueries
+) => {
   const detailData: MicroCMSPost = await client.getListDetail({
-    endpoint: "news-ja",
+    endpoint: `news-${locale}`,
     contentId: postId,
     queries,
   });

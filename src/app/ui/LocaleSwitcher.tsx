@@ -1,34 +1,36 @@
 "use client";
 
-import { Locale } from "@/navigation";
+import { Link, Locale, usePathname } from "@/navigation";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 const LocaleSwitcher = () => {
-  const [isPending, startTransition] = React.useTransition();
-  const router = useRouter();
-  const localeActive = useLocale();
-
-  const onSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const locale = e.target.value;
-    startTransition(() => {
-      router.replace(`/${locale}`);
-    });
-  };
+  const activeLocale = useLocale() as Locale;
+  const curPath = usePathname();
 
   return (
-    <label className="text-white">
-      <p className="sr-only">Switch Language</p>
-      <select
-        defaultValue={localeActive}
-        onChange={onSelectChange}
-        disabled={isPending}
-        className="bg-transparent px-2">
-        <option value={Locale.ja}>日本語</option>
-        <option value={Locale.en}>English</option>
-      </select>
-    </label>
+    <div className="text-white text-xl ml-5 bg-slate-600 hover:bg-opacity-100 bg-opacity-75 rounded-lg h-12 w-24">
+      <Link
+        href={curPath}
+        locale={Locale.ja}
+        className={
+          activeLocale === Locale.ja
+            ? "hidden"
+            : "flex items-center justify-center h-full w-full"
+        }>
+        <p>日本語</p>
+      </Link>
+      <Link
+        href={curPath}
+        locale={Locale.en}
+        className={
+          activeLocale === Locale.en
+            ? "hidden"
+            : "flex items-center justify-center h-full w-full"
+        }>
+        <p>English</p>
+      </Link>
+    </div>
   );
 };
 

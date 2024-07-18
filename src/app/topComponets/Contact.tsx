@@ -2,7 +2,6 @@ import React from "react";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
 import { Section } from "../constants";
-import { tProps } from "@/middleware";
 
 const Contact = () => {
   const t = useTranslations("contact");
@@ -15,7 +14,7 @@ const Contact = () => {
   );
 };
 
-const ContactBody = ({ t }: tProps) => {
+const ContactBody = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   return (
     <div className="text-white text-sm md:text-lg">
       <form

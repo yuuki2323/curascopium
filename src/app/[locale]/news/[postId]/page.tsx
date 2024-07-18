@@ -3,6 +3,8 @@ import Header from "../../../topComponets/Header";
 import { getDetail } from "../../../../libs/client";
 import { format } from "date-fns";
 import Image from "next/image";
+import { useLocale } from "next-intl";
+import { Locale } from "@/navigation";
 
 export const runtime = "edge";
 
@@ -11,7 +13,8 @@ interface PostIdProps {
 }
 
 const Home = async ({ params: { postId } }: PostIdProps) => {
-  const post = await getDetail(postId);
+  const locale = useLocale() as Locale;
+  const post = await getDetail(locale, postId);
 
   return (
     <main className="mx-8">

@@ -2,8 +2,7 @@ import Image from "next/image";
 import React from "react";
 import CustomSection from "../ui/CustomSection";
 import { Section, projects } from "../constants";
-import { useTranslations } from "next-intl";
-import { tProps } from "@/middleware";
+import { MessageKeys, useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   id: string;
@@ -22,7 +21,7 @@ const Project = () => {
   );
 };
 
-const ProjectBody = ({ t }: tProps) => {
+const ProjectBody = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   return (
     <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 text-white text-sm md:text-lg">
       {projects.map((project) => {
@@ -30,8 +29,8 @@ const ProjectBody = ({ t }: tProps) => {
           <ProjectCard
             key={project}
             id={project}
-            title={t(`${project}.title`)}
-            description={t(`${project}.body`)}
+            title={t(`${project}.title` as MessageKeys<any, any>)}
+            description={t(`${project}.body` as MessageKeys<any, any>)}
           />
         );
       })}

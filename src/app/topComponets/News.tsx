@@ -2,24 +2,31 @@ import React from "react";
 import { getList } from "../../libs/client";
 import { format } from "date-fns";
 import CustomSection from "../ui/CustomSection";
-import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, Locale } from "@/navigation";
 import { Section } from "../constants";
-import { tProps } from "@/middleware";
+import { MicroCMSQueries } from "microcms-js-sdk";
 
-const News = () => {
+interface NewsBodyProps {
+  t: ReturnType<typeof useTranslations>;
+  isWidget?: boolean;
+}
+
+const News = ({ isWidget }: { isWidget?: boolean }) => {
   const t = useTranslations("news");
   return (
     <CustomSection
       id={Section.news}
       title={t.rich("title", { br: () => <br /> }) as React.ReactElement}
-      body={<NewsBody t={t} />}
+      body={<NewsBody t={t} isWidget={isWidget} />}
     />
   );
 };
 
-const NewsBody = async ({ t }: tProps) => {
-  const { contents } = await getList({ limit: 5 });
+const NewsBody = async ({ t, isWidget = false }: NewsBodyProps) => {
+  const locale = useLocale() as Locale;
+  const queries: MicroCMSQueries = isWidget ? { limit: 5 } : {};
+  const { contents } = await getList(locale, queries);
   return (
     <div className="text-xs md:text-xl">
       {contents.map((post) => (
@@ -34,9 +41,11 @@ const NewsBody = async ({ t }: tProps) => {
         </dl>
       ))}
 
-      <Link href="/news" className="block text-white ">
-        <p className=" text-right">{t("more")}</p>
-      </Link>
+      {isWidget && (
+        <Link href="/news" className="block text-white ">
+          <p className="text-right">{t("more")}</p>
+        </Link>
+      )}
     </div>
   );
 };

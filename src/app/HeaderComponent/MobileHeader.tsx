@@ -6,7 +6,7 @@ import { FaXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
-import { useTranslations } from "next-intl";
+import { MessageKeys, useTranslations } from "next-intl";
 import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 const MobileHeader = () => {
@@ -75,7 +75,9 @@ const MobileHeader = () => {
                   <li key={navi.title} className="mb-4 text-center">
                     <button onClick={handleMenu}>
                       <Link href={navi.href} className="block p-2">
-                        <p className="text-white text-base">{t(navi.title)}</p>
+                        <p className="text-white text-base">
+                          {t(navi.title as MessageKeys<any, any>)}
+                        </p>
                       </Link>
                     </button>
                   </li>
@@ -87,10 +89,7 @@ const MobileHeader = () => {
               {SNSInfo.map((sns) => {
                 return (
                   <li key={sns.title}>
-                    <Link
-                      href={sns.href}
-                      target="_blank"
-                      rel="noreferrer">
+                    <Link href={sns.href} target="_blank" rel="noreferrer">
                       <Image src={sns.src} width={36} height={36} alt="sns" />
                     </Link>
                   </li>

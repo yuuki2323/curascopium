@@ -4,7 +4,7 @@ import { Splide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import { members } from "../../constants";
 import { mediaQuery, useMediaQuery } from "../../useMediaQuery";
-import { useTranslations } from "next-intl";
+import { MessageKeys, useTranslations } from "next-intl";
 import MemberCard from "./MemberCard";
 
 const MemberBody = (): React.JSX.Element => {
@@ -29,13 +29,13 @@ const MemberBody = (): React.JSX.Element => {
             key={id}
             id={id}
             name={
-              t.rich(`${id}.name`, {
+              t.rich(`${id}.name` as MessageKeys<any, any>, {
                 br: () => <br />,
               }) as React.ReactElement
             }
-            en={t(`${id}.subtitle`)}
+            en={t(`${id}.subtitle` as MessageKeys<any, any>)}
             description={
-              t.rich(`${id}.description`, {
+              t.rich(`${id}.description` as MessageKeys<any, any>, {
                 br: () => <br />,
               }) as React.ReactElement
             }

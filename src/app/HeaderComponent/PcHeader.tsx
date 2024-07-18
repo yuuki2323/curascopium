@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { SNSInfo, SectionInfo } from "../constants";
 import { Link } from "@/navigation";
-import { useTranslations } from "next-intl";
+import { MessageKeys, useTranslations } from "next-intl";
 import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 const PcHeader = () => {
@@ -42,7 +42,7 @@ const PcHeader = () => {
                 <li key={navi.title}>
                   <Link href={navi.href}>
                     <p className="text-white  text-sm lg:text-lg">
-                      {t(navi.title)}
+                      {t(navi.title as MessageKeys<any, any>)}
                     </p>
                   </Link>
                 </li>

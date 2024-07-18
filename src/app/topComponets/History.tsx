@@ -2,7 +2,6 @@ import React from "react";
 import CustomSection from "../ui/CustomSection";
 import { useTranslations } from "next-intl";
 import { Section } from "../constants";
-import { tProps } from "@/middleware";
 
 const History = () => {
   const t = useTranslations("history");
@@ -15,7 +14,7 @@ const History = () => {
   );
 };
 
-const HistoryBody = ({ t }: tProps) => {
+const HistoryBody = ({ t }: { t: ReturnType<typeof useTranslations> }) => {
   return (
     <p className="mx-auto text-white text-sm md:text-xl py-4 md:py-8">
       {t.rich("body", { br: () => <br /> })}

@@ -17,7 +17,7 @@ export default function Home() {
       <Topphoto />
 
       <div className="mx-8 md:mx-0">
-        <News />
+        <News isWidget={true} />
         <History />
         <Purpose />
         <Member />
