@@ -9,7 +9,7 @@ const LocaleSwitcher = () => {
   const curPath = usePathname();
 
   return (
-    <div className="text-white text-xl ml-5 bg-slate-600 hover:bg-opacity-100 bg-opacity-75 rounded-lg h-12 w-24">
+    <div className="text-white text-xl md:ml-5 bg-slate-600 hover:bg-opacity-100 bg-opacity-75 rounded-lg h-12 w-24">
       <Link
         href={curPath}
         locale={Locale.ja}
