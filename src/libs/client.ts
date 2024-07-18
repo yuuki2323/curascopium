@@ -24,7 +24,7 @@ export const client = createClient({
 
 export const getList = async (queries?: MicroCMSQueries) => {
   const listData: MicroCMSListResponse<MicroCMSPost> = await client.getList({
-    endpoint: "news",
+    endpoint: "news-ja",
     queries,
   });
   return listData;
@@ -32,7 +32,7 @@ export const getList = async (queries?: MicroCMSQueries) => {
 
 export const getDetail = async (postId: string, queries?: MicroCMSQueries) => {
   const detailData: MicroCMSPost = await client.getListDetail({
-    endpoint: "news",
+    endpoint: "news-ja",
     contentId: postId,
     queries,
   });
