@@ -18,6 +18,14 @@ interface MicroCMSCategory extends MicroCMSListContent {
   name: string;
 }
 
+if (!process.env.MICROCMS_SERVICE_DOMAIN) {
+  throw new Error("Please define MICROCMS_SERVICE_DOMAIN in your .env");
+}
+
+if (!process.env.MICROCMS_API_KEY) {
+  throw new Error("Please define MICROCMS_API_KEY in your .env");
+}
+
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN as string,
   apiKey: process.env.MICROCMS_API_KEY as string,
