@@ -13,7 +13,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "date-fns": "^3.3.1",
     "lodash": "^4.17.21",
-    "microcms-js-sdk": "^2.7.0",
+    "microcms-js-sdk": "^3.1.2",
     "next": "^14.2.4",
     "next-intl": "^3.11.3",
     "react": "^18.2.0",
