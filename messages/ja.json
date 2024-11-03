@@ -31,6 +31,11 @@
         "subtitle": "Yusaku Tanaka",
         "description": "UC バークレー<br></br>[宇宙物理学 / 障がい者学]"
       },
+      "harimoto": {
+        "name": "張原 宏光",
+        "subtitle": "Hiromitsu Harimoto",
+        "description": "UC バークレー卒<br></br>[生化学 / データサイエンス]<br></br>東京大学医科学研究所 元研究員<br></br>ケンブリッジ大学大学院<br></br>[PhD 幹細胞生命科学]<br></br>"
+      },
       "yamamoto": {
         "name": "山本 暖",
         "subtitle": "Haru Yamamoto",
@@ -45,11 +50,6 @@
         "name": "眞田 聖光",
         "subtitle": "Saniya Sanada",
         "description": "東京大学 大学院卒<br></br>[惑星科学]<br></br>UT サンアントニオ 大学院<br></br>[PhD 物理]"
-      },
-      "harimoto": {
-        "name": "張本 宏光",
-        "subtitle": "Hiromitsu Harimoto",
-        "description": "UC バークレー卒<br></br>[生化学 / データサイエンス]<br></br>東京大学医科学研究所 元研究員<br></br>ケンブリッジ大学大学院<br></br>[PhD 幹細胞生命科学]<br></br>"
       },
       "miyagi": {
         "name": "宮城 理",

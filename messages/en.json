@@ -31,6 +31,11 @@
         "subtitle": "\n",
         "description": "Founder / President"
       },
+      "harimoto": {
+        "name": "Hiromitsu<br></br>Harimoto",
+        "subtitle": "\n",
+        "description": "Vice President"
+      },
       "yamamoto": {
         "name": "Haru<br></br>Yamamoto",
         "subtitle": "\n",
@@ -43,11 +48,6 @@
       },
       "sanada": {
         "name": "Saniya<br></br>Sanada",
-        "subtitle": "\n",
-        "description": "Vice President"
-      },
-      "harimoto": {
-        "name": "Hiromitsu<br></br>Harimoto",
         "subtitle": "\n",
         "description": "Vice President"
       },

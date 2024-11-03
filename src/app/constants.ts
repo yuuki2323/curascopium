@@ -71,10 +71,10 @@ export const SectionInfo: SectionInfoProps[] = [
 
 export const enum Member {
   tanaka,
+  harimoto,
   yamamoto,
   nagasawa,
   sanada,
-  harimoto,
   miyagi,
   taniguchi,
   yamada,
@@ -95,6 +95,10 @@ export const members: MemberInfoProps[] = [
     portfolioURL: "https://www.linkedin.com/in/yusaku-tanaka/",
   },
   {
+    id: "harimoto",
+    portfolioURL: "https://www.linkedin.com/in/hiro-harimoto",
+  },
+  {
     id: "yamamoto",
     portfolioURL: "https://www.linkedin.com/in/haruyamamoto/",
   },
@@ -105,10 +109,6 @@ export const members: MemberInfoProps[] = [
   {
     id: "sanada",
     portfolioURL: "https://www.linkedin.com/in/saniya-sanada-860a41280/",
-  },
-  {
-    id: "harimoto",
-    portfolioURL: "https://www.linkedin.com/in/hiro-harimoto",
   },
   {
     id: "miyagi",
