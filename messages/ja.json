@@ -85,6 +85,16 @@
         "name": "池田 夢叶",
         "subtitle": "Yumeka Ikeda",
         "description": "UC サンディエゴ<br></br>[宇宙物理学]"
+      },
+      "matsuzoe": {
+        "name": "松添壱成",
+        "subtitle": "Issei Matsuzoe",
+        "description": "慶應義塾大学大学院<br></br>[電気電子工学]"
+      },
+      "tampo": {
+        "name": "反保雄介",
+        "subtitle": "Yusuke Tampo",
+        "description": "南アフリカ天文台<br></br>[天体物理学]"
       }
     }
   },

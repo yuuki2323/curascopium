@@ -82,6 +82,8 @@ export const enum Member {
   sato,
   matsunaga,
   ikeda,
+  matsuzoe,
+  tampo,
 }
 
 interface MemberInfoProps {
@@ -96,7 +98,7 @@ export const members: MemberInfoProps[] = [
   },
   {
     id: "harimoto",
-    portfolioURL: "https://www.linkedin.com/in/hiro-harimoto",
+    portfolioURL: "https://www.linkedin.com/in/hiro-harimoto/",
   },
   {
     id: "yamamoto",
@@ -128,7 +130,7 @@ export const members: MemberInfoProps[] = [
   },
   {
     id: "sato",
-    portfolioURL: "https://www.linkedin.com/in/sakuya-sato-198395294",
+    portfolioURL: "https://www.linkedin.com/in/sakuya-sato-198395294/",
   },
   {
     id: "matsunaga",
@@ -136,7 +138,15 @@ export const members: MemberInfoProps[] = [
   },
   {
     id: "ikeda",
-    portfolioURL: "https://www.linkedin.com/in/yumeka-ikeda-59bb8b304",
+    portfolioURL: "https://www.linkedin.com/in/yumeka-ikeda-59bb8b304/",
+  },
+  {
+    id: "matsuzoe",
+    portfolioURL: "https://www.linkedin.com/in/issei-matsuzoe-32ab29311/",
+  },
+  {
+    id: "tampo",
+    portfolioURL: "https://www.linkedin.com/in/yusuke-tampo/",
   },
 ];
 
