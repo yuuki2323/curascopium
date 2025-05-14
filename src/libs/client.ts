@@ -12,6 +12,7 @@ export interface MicroCMSPost extends MicroCMSListContent {
   content: string;
   category: MicroCMSCategory | null;
   photo?: MicroCMSImage;
+  publishDate?: string;
 }
 
 interface MicroCMSCategory extends MicroCMSListContent {

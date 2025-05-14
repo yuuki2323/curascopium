@@ -22,7 +22,7 @@ const Home = async ({ params: { postId } }: PostIdProps) => {
       <article className="container mx-auto mt-24 md:mt-36 text-sm md:text-lg text-white bg-slate-600 bg-opacity-50">
         <section id="summary" className="mx-3">
           <p className="mb-2 md:mb-4">
-            {format(new Date(post.createdAt), "yyyy/MM/dd")}
+            {format(new Date(post.publishDate ?? post.createdAt), "yyyy/MM/dd")}
           </p>
 
           <h2 className="mb-4 md:mb-10 text-2xl md:text-4xl text-center font-bold">
