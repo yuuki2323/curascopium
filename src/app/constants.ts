@@ -80,7 +80,6 @@ export const enum Member {
   yamada,
   kurosaka,
   sato,
-  matsunaga,
   ikeda,
   matsuzoe,
   tampo,
@@ -131,10 +130,6 @@ export const members: MemberInfoProps[] = [
   {
     id: "sato",
     portfolioURL: "https://www.linkedin.com/in/sakuya-sato-198395294/",
-  },
-  {
-    id: "matsunaga",
-    portfolioURL: "https://www.linkedin.com/in/taishipatrickmatsunaga/",
   },
   {
     id: "ikeda",
